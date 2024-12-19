@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pedestals",
+	"version": "${version}",
+	"name": "Pedestals",
+	"description": "Display your precious items with pedestals!!",
+	"authors": [
+		"Mattias15"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "ARR",
+	"icon": "assets/pedestals/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mattias.pedestal.Pedestals"
+		],
+		"fabric-datagen": [
+			"net.mattias.pedestal.PedestalsDataGenerator"
+		],
+		"client": [
+			"net.mattias.pedestal.PedestalModClient"
+		]
+	},
+	"mixins": [
+		"pedestals.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
