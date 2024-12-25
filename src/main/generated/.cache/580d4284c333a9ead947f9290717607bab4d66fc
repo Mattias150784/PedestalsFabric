@@ -1,2 +1,6 @@
-// 1.21	2024-12-20T17:45:26.0760426	Pedestals/Block Loot Tables
+// 1.21	2024-12-25T10:57:07.0542056	Pedestals/Block Loot Tables
+69ce866f1115d91a577e68e980bcf3da519935be data\pedestals\loot_table\blocks\spruce_log_pedestal.json
+e0345bdbf116f2b9d4012d38feaabc03bb858dd3 data\pedestals\loot_table\blocks\dark_oak_log_pedestal.json
+e177a06e8a7e768d48f948b0a87d9812fd09f7aa data\pedestals\loot_table\blocks\birch_log_pedestal.json
 322907cc05f066a1b1ca9611eb136adecad9daf9 data\pedestals\loot_table\blocks\pedestal.json
+15eb88f1ff8c512d765466eb1b00710e7a45e820 data\pedestals\loot_table\blocks\oak_log_pedestal.json

@@ -1,6 +1,6 @@
 package net.mattias.pedestal.blocks.entity.renderer;
 
-import net.mattias.pedestal.blocks.entity.custom.PedestalBlockEntity;
+import net.mattias.pedestal.blocks.entity.custom.DarkOakLogPedestalBlockEntity;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.LightmapTextureManager;
 import net.minecraft.client.render.OverlayTexture;
@@ -16,13 +16,13 @@ import net.minecraft.util.math.RotationAxis;
 import net.minecraft.world.LightType;
 import net.minecraft.world.World;
 
-public class PedestalBlockEntityRenderer implements BlockEntityRenderer<PedestalBlockEntity> {
+public class DarkOakLogPedestalBlockEntityRenderer implements BlockEntityRenderer<DarkOakLogPedestalBlockEntity> {
 
-    public PedestalBlockEntityRenderer(BlockEntityRendererFactory.Context context) {
+    public DarkOakLogPedestalBlockEntityRenderer(BlockEntityRendererFactory.Context context) {
     }
 
     @Override
-    public void render(PedestalBlockEntity entity, float tickDelta, MatrixStack matrices,
+    public void render(DarkOakLogPedestalBlockEntity entity, float tickDelta, MatrixStack matrices,
                        VertexConsumerProvider vertexConsumers, int light, int overlay) {
         ItemRenderer itemRenderer = MinecraftClient.getInstance().getItemRenderer();
         ItemStack stack = entity.getStack(0);
@@ -34,6 +34,7 @@ public class PedestalBlockEntityRenderer implements BlockEntityRenderer<Pedestal
         matrices.translate(0.5f, 1.15f + bobbingOffset, 0.5f);
         matrices.scale(0.5f, 0.5f, 0.5f);
         matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(entity.getRenderingRotation()));
+
 
         itemRenderer.renderItem(stack, ModelTransformationMode.GROUND, getLightLevel(entity.getWorld(),
                 entity.getPos()), OverlayTexture.DEFAULT_UV, matrices, vertexConsumers, entity.getWorld(), 1);

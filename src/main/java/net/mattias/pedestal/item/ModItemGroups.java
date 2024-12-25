@@ -16,6 +16,10 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.pedestals_tab"))
                     .icon(() -> new ItemStack(ModBlocks.PEDESTAL)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PEDESTAL);
+                        entries.add(ModBlocks.OAK_LOG_PEDESTAL);
+                        entries.add(ModBlocks.BIRCH_LOG_PEDESTAL);
+                        entries.add(ModBlocks.DARK_OAK_LOG_PEDESTAL);
+                        entries.add(ModBlocks.SPRUCE_LOG_PEDESTAL);
 
 
                     }).build());

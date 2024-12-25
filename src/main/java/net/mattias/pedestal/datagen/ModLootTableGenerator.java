@@ -26,6 +26,10 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.PEDESTAL);
+        addDrop(ModBlocks.OAK_LOG_PEDESTAL);
+        addDrop(ModBlocks.BIRCH_LOG_PEDESTAL);
+        addDrop(ModBlocks.DARK_OAK_LOG_PEDESTAL);
+        addDrop(ModBlocks.SPRUCE_LOG_PEDESTAL);
     }
 
 

@@ -1,7 +1,7 @@
 package net.mattias.pedestal.blocks;
 
 import net.mattias.pedestal.Pedestals;
-import net.mattias.pedestal.blocks.custom.PedestalBlock;
+import net.mattias.pedestal.blocks.custom.*;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -15,6 +15,18 @@ public class ModBlocks {
 
     public static final Block PEDESTAL = registerBlock("pedestal",
             new PedestalBlock(AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
+
+    public static final Block OAK_LOG_PEDESTAL = registerBlock("oak_log_pedestal",
+            new OakLogPedestalBlock(AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
+
+    public static final Block BIRCH_LOG_PEDESTAL = registerBlock("birch_log_pedestal",
+            new BirchLogPedestalBlock(AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
+
+    public static final Block DARK_OAK_LOG_PEDESTAL = registerBlock("dark_oak_log_pedestal",
+            new DarkOakLogPedestalBlock(AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
+
+    public static final Block SPRUCE_LOG_PEDESTAL = registerBlock("spruce_log_pedestal",
+            new SpruceLogPedestalBlock(AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
     
 
     private static Block registerBlock(String name, Block block) {

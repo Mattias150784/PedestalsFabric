@@ -1,3 +1,11 @@
-// 1.21	2024-12-20T17:45:26.0770389	Pedestals/Recipes
-e6b388a8aeedf6de00907e16cfe88b8a6619f615 data\pedestals\advancement\recipes\misc\pedestal.json
-bfa5f1b64dd4c3fd233c93547956cd2fda12a97e data\pedestals\recipe\pedestal.json
+// 1.21	2024-12-25T10:57:07.0561983	Pedestals/Recipes
+f845c71bbf7134fec43e81ec924780c48a86c0fb data\pedestals\recipe\block.pedestals.oak_log_pedestal_pedestal.json
+9510ce8f3ad5904f71957415f2d26a7fbfbc96a1 data\pedestals\advancement\recipes\misc\block.pedestals.oak_log_pedestal_pedestal.json
+bfa5f1b64dd4c3fd233c93547956cd2fda12a97e data\pedestals\recipe\block.pedestals.pedestal_pedestal.json
+639beb39f6cc7e5377edef0a9daeacad65031d1e data\pedestals\advancement\recipes\misc\block.pedestals.birch_log_pedestal_pedestal.json
+63c12ad2bd0051404660f6056c30c4ab65786f93 data\pedestals\recipe\block.pedestals.dark_oak_log_pedestal_pedestal.json
+d051245c3e952a38a0dd6acf7fdc6cdf0ae4bc5a data\pedestals\advancement\recipes\misc\block.pedestals.spruce_log_pedestal_pedestal.json
+7f2987d5917e48923cc90f198c497f648a66c864 data\pedestals\recipe\block.pedestals.birch_log_pedestal_pedestal.json
+a5a1b3a7ff1ccce349e1482f51e4f2192f878a1e data\pedestals\advancement\recipes\misc\block.pedestals.pedestal_pedestal.json
+e435877bfa1ebfc70123e73c9c4e4ea603de80cc data\pedestals\recipe\block.pedestals.spruce_log_pedestal_pedestal.json
+2c5ee7ab710f74b0dd7198bf22a19fe8581bf196 data\pedestals\advancement\recipes\misc\block.pedestals.dark_oak_log_pedestal_pedestal.json

@@ -19,6 +19,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PEDESTAL
                       );
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.OAK_LOG_PEDESTAL,
+                        ModBlocks.BIRCH_LOG_PEDESTAL,
+                        ModBlocks.DARK_OAK_LOG_PEDESTAL,
+                        ModBlocks.SPRUCE_LOG_PEDESTAL
+
+                );
+
       /*  getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.OBSIDIAN_PEDESTAL,
                         ModBlocks.CRYING_OBSIDIAN);

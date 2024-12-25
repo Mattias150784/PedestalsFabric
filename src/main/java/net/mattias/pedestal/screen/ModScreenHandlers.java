@@ -2,7 +2,7 @@ package net.mattias.pedestal.screen;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.mattias.pedestal.Pedestals;
-import net.mattias.pedestal.screen.custom.PedestalScreenHandler;
+import net.mattias.pedestal.screen.custom. *;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.screen.ScreenHandlerType;
@@ -13,6 +13,26 @@ public class ModScreenHandlers {
     public static final ScreenHandlerType<PedestalScreenHandler> PEDESTAL_SCREEN_HANDLER =
             Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "pedestal_screen_handler"),
                     new ExtendedScreenHandlerType<>(PedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<OakLogPedestalScreenHandler> OAK_LOG_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "oak_log_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(OakLogPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<BirchLogPedestalScreenHandler> BIRCH_LOG_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "birch_log_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(BirchLogPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+
+    public static final ScreenHandlerType<SpruceLogPedestalScreenHandler> SPRUCE_LOG_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "spruce_log_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(SpruceLogPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<DarkOakLogPedestalScreenHandler> DARK_OAK_LOG_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "dark_oak_log_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(DarkOakLogPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+
+
 
 
     public static void registerScreenHandlers() {
