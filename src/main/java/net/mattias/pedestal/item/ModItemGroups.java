@@ -20,6 +20,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BIRCH_LOG_PEDESTAL);
                         entries.add(ModBlocks.DARK_OAK_LOG_PEDESTAL);
                         entries.add(ModBlocks.SPRUCE_LOG_PEDESTAL);
+                        entries.add(ModBlocks.ACACIA_LOG_PEDESTAL);
+                        entries.add(ModBlocks.JUNGLE_LOG_PEDESTAL);
+                        entries.add(ModBlocks.CHERRY_LOG_PEDESTAL);
+                        entries.add(ModBlocks.MANGROVE_LOG_PEDESTAL);
 
 
                     }).build());

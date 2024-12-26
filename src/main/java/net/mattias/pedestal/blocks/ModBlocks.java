@@ -27,6 +27,18 @@ public class ModBlocks {
 
     public static final Block SPRUCE_LOG_PEDESTAL = registerBlock("spruce_log_pedestal",
             new SpruceLogPedestalBlock(AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
+
+    public static final Block ACACIA_LOG_PEDESTAL = registerBlock("acacia_log_pedestal",
+            new AcaciaLogPedestalBlock(AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
+
+    public static final Block MANGROVE_LOG_PEDESTAL = registerBlock("mangrove_log_pedestal",
+            new MangroveLogPedestalBlock(AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
+
+    public static final Block CHERRY_LOG_PEDESTAL = registerBlock("cherry_log_pedestal",
+            new CherryLogPedestalBlock(AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
+
+    public static final Block JUNGLE_LOG_PEDESTAL = registerBlock("jungle_log_pedestal",
+            new JungleLogPedestalBlock(AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
     
 
     private static Block registerBlock(String name, Block block) {

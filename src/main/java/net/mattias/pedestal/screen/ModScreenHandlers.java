@@ -31,6 +31,23 @@ public class ModScreenHandlers {
             Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "dark_oak_log_pedestal_screen_handler"),
                     new ExtendedScreenHandlerType<>(DarkOakLogPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
 
+    public static final ScreenHandlerType<AcaciaLogPedestalScreenHandler> ACACIA_LOG_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "acacia_log_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(AcaciaLogPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<JungleLogPedestalScreenHandler> JUNGLE_LOG_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "jungle_log_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(JungleLogPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+
+    public static final ScreenHandlerType<MangroveLogPedestalScreenHandler> MANGROVE_LOG_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "mangrove_log_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(MangroveLogPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<CherryLogPedestalScreenHandler> CHERRY_LOG_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "cherry_log_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(CherryLogPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
 
 
 

@@ -30,6 +30,23 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "spruce_log_pedestal_be"),
                     BlockEntityType.Builder.create(SpruceLogPedestalBlockEntity::new, ModBlocks.SPRUCE_LOG_PEDESTAL).build(null));
 
+    public static final BlockEntityType<CherryLogPedestalBlockEntity> CHERRY_LOG_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "cherry_log_pedestal_be"),
+                    BlockEntityType.Builder.create(CherryLogPedestalBlockEntity::new, ModBlocks.CHERRY_LOG_PEDESTAL).build(null));
+
+    public static final BlockEntityType<MangroveLogPedestalBlockEntity> MANGROVE_LOG_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "mangrove_log_pedestal_be"),
+                    BlockEntityType.Builder.create(MangroveLogPedestalBlockEntity::new, ModBlocks.MANGROVE_LOG_PEDESTAL).build(null));
+
+    public static final BlockEntityType<JungleLogPedestalBlockEntity> JUNGLE_LOG_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "jungle_log_pedestal_be"),
+                    BlockEntityType.Builder.create(JungleLogPedestalBlockEntity::new, ModBlocks.JUNGLE_LOG_PEDESTAL).build(null));
+
+    public static final BlockEntityType<AcaciaLogPedestalBlockEntity> ACACIA_LOG_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "acacia_log_pedestal_be"),
+                    BlockEntityType.Builder.create(AcaciaLogPedestalBlockEntity::new, ModBlocks.ACACIA_LOG_PEDESTAL).build(null));
+
+
 
     public static void registerBlockEntities() {
         Pedestals.LOGGER.info("Registering Block Entities for " + Pedestals.MOD_ID);

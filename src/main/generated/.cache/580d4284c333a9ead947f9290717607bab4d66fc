@@ -1,6 +1,10 @@
-// 1.21	2024-12-25T10:57:07.0542056	Pedestals/Block Loot Tables
+// 1.21	2024-12-26T14:50:24.5887515	Pedestals/Block Loot Tables
 69ce866f1115d91a577e68e980bcf3da519935be data\pedestals\loot_table\blocks\spruce_log_pedestal.json
 e0345bdbf116f2b9d4012d38feaabc03bb858dd3 data\pedestals\loot_table\blocks\dark_oak_log_pedestal.json
+ad0746afd05db4c61035cc4c0ac10a48d9e10dad data\pedestals\loot_table\blocks\cherry_log_pedestal.json
 e177a06e8a7e768d48f948b0a87d9812fd09f7aa data\pedestals\loot_table\blocks\birch_log_pedestal.json
+2c0bb38ce3bd14fdd65b29f9e0a8f024a178e5a5 data\pedestals\loot_table\blocks\jungle_log_pedestal.json
 322907cc05f066a1b1ca9611eb136adecad9daf9 data\pedestals\loot_table\blocks\pedestal.json
+598033cfb898aa71af5d77827964af7cb96c7014 data\pedestals\loot_table\blocks\mangrove_log_pedestal.json
 15eb88f1ff8c512d765466eb1b00710e7a45e820 data\pedestals\loot_table\blocks\oak_log_pedestal.json
+d6c0371d6b8e31be55a39b9545093e7143ee3a68 data\pedestals\loot_table\blocks\acacia_log_pedestal.json

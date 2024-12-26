@@ -18,6 +18,11 @@ public class PedestalModClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(ModBlockEntities.BIRCH_LOG_PEDESTAL_BE, BirchLogPedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.SPRUCE_LOG_PEDESTAL_BE, SpruceLogPedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.DARK_OAK_LOG_PEDESTAL_BE, DarkOakLogPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.CHERRY_LOG_PEDESTAL_BE, CherryLogPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.JUNGLE_LOG_PEDESTAL_BE, JungleLogPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.MANGROVE_LOG_PEDESTAL_BE, MangroveLogPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.ACACIA_LOG_PEDESTAL_BE, AcaciaLogPedestalBlockEntityRenderer::new);
+
 
 
         HandledScreens.register(ModScreenHandlers.PEDESTAL_SCREEN_HANDLER, PedestalScreen::new);
@@ -25,5 +30,9 @@ public class PedestalModClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.BIRCH_LOG_PEDESTAL_SCREEN_HANDLER, BirchLogPedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.SPRUCE_LOG_PEDESTAL_SCREEN_HANDLER, SpruceLogPedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.DARK_OAK_LOG_PEDESTAL_SCREEN_HANDLER, DarkOakLogPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.CHERRY_LOG_PEDESTAL_SCREEN_HANDLER, CherryLogPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.JUNGLE_LOG_PEDESTAL_SCREEN_HANDLER, JungleLogPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.MANGROVE_LOG_PEDESTAL_SCREEN_HANDLER, MangroveLogPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.ACACIA_LOG_PEDESTAL_SCREEN_HANDLER, AcaciaLogPedestalScreen::new);
     }
 }
