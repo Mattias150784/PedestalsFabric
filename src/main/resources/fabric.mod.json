@@ -25,10 +25,7 @@
 			"net.mattias.pedestal.PedestalModClient"
 		]
 	},
-	"mixins": [
-		"pedestals.mixins.json"
-	],
-	"depends": {
+		"depends": {
 		"fabricloader": ">=0.16.9",
 		"minecraft": "~1.21",
 		"java": ">=21",

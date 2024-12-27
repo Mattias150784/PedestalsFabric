@@ -1,5 +1,8 @@
 {
   "values": [
-    "pedestals:pedestal"
+    "pedestals:pedestal",
+    "pedestals:polished_deepslate_pedestal",
+    "pedestals:crying_obsidian_pedestal",
+    "pedestals:obsidian_pedestal"
   ]
 }

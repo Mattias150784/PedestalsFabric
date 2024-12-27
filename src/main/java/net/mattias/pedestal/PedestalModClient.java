@@ -22,6 +22,19 @@ public class PedestalModClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(ModBlockEntities.JUNGLE_LOG_PEDESTAL_BE, JungleLogPedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.MANGROVE_LOG_PEDESTAL_BE, MangroveLogPedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.ACACIA_LOG_PEDESTAL_BE, AcaciaLogPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.OAK_PLANKS_PEDESTAL_BE, OakPlanksPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.BIRCH_PLANKS_PEDESTAL_BE, BirchPlanksPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.SPRUCE_PLANKS_PEDESTAL_BE, SprucePlanksPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.DARK_OAK_PLANKS_PEDESTAL_BE, DarkOakPlanksPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.CHERRY_PLANKS_PEDESTAL_BE, CherryPlanksPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.JUNGLE_PLANKS_PEDESTAL_BE, JunglePlanksPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.MANGROVE_PLANKS_PEDESTAL_BE, MangrovePlanksPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.ACACIA_PLANKS_PEDESTAL_BE, AcaciaPlanksPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.BAMBOO_PLANKS_PEDESTAL_BE, BambooPlanksPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.POLISHED_DEEPSLATE_PEDESTAL_BE, PolishedDeepslatePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.CRYING_OBSIDIAN_PEDESTAL_BE, CryingObsidianPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.OBSIDIAN_PEDESTAL_BE, ObsidianPedestalBlockEntityRenderer::new);
+
 
 
 
@@ -34,5 +47,17 @@ public class PedestalModClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.JUNGLE_LOG_PEDESTAL_SCREEN_HANDLER, JungleLogPedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.MANGROVE_LOG_PEDESTAL_SCREEN_HANDLER, MangroveLogPedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.ACACIA_LOG_PEDESTAL_SCREEN_HANDLER, AcaciaLogPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.OAK_PLANKS_PEDESTAL_SCREEN_HANDLER, OakPlanksPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.BIRCH_PLANKS_PEDESTAL_SCREEN_HANDLER, BirchPlanksPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.SPRUCE_PLANKS_PEDESTAL_SCREEN_HANDLER, SprucePlanksPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.DARK_OAK_PLANKS_PEDESTAL_SCREEN_HANDLER, DarkOakPlanksPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.CHERRY_PLANKS_PEDESTAL_SCREEN_HANDLER, CherryPlanksPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.JUNGLE_PLANKS_PEDESTAL_SCREEN_HANDLER, JunglePlanksPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.MANGROVE_PLANKS_PEDESTAL_SCREEN_HANDLER, MangrovePlanksPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.ACACIA_PLANKS_PEDESTAL_SCREEN_HANDLER, AcaciaPlanksPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.BAMBOO_PLANKS_PEDESTAL_SCREEN_HANDLER, BambooPlanksPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.POLISHED_DEEPSLATE_PEDESTAL_SCREEN_HANDLER, PolishedDeepslatePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.CRYING_OBSIDIAN_PEDESTAL_SCREEN_HANDLER, CryingObsidianPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.OBSIDIAN_PEDESTAL_SCREEN_HANDLER, ObsidianPedestalScreen::new);
     }
 }

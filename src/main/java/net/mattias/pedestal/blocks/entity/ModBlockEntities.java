@@ -46,7 +46,53 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "acacia_log_pedestal_be"),
                     BlockEntityType.Builder.create(AcaciaLogPedestalBlockEntity::new, ModBlocks.ACACIA_LOG_PEDESTAL).build(null));
 
+    public static final BlockEntityType<OakPlanksPedestalBlockEntity> OAK_PLANKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "oak_planks_pedestal_be"),
+                    BlockEntityType.Builder.create(OakPlanksPedestalBlockEntity::new, ModBlocks.OAK_PLANKS_PEDESTAL).build(null));
 
+    public static final BlockEntityType<BirchPlanksPedestalBlockEntity> BIRCH_PLANKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "birch_planks_pedestal_be"),
+                    BlockEntityType.Builder.create(BirchPlanksPedestalBlockEntity::new, ModBlocks.BIRCH_PLANKS_PEDESTAL).build(null));
+
+    public static final BlockEntityType<DarkOakPlanksPedestalBlockEntity> DARK_OAK_PLANKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "dark_oak_planks_pedestal_be"),
+                    BlockEntityType.Builder.create(DarkOakPlanksPedestalBlockEntity::new, ModBlocks.DARK_OAK_PLANKS_PEDESTAL).build(null));
+
+    public static final BlockEntityType<SprucePlanksPedestalBlockEntity> SPRUCE_PLANKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "spruce_planks_pedestal_be"),
+                    BlockEntityType.Builder.create(SprucePlanksPedestalBlockEntity::new, ModBlocks.SPRUCE_PLANKS_PEDESTAL).build(null));
+
+    public static final BlockEntityType<CherryPlanksPedestalBlockEntity> CHERRY_PLANKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "cherry_planks_pedestal_be"),
+                    BlockEntityType.Builder.create(CherryPlanksPedestalBlockEntity::new, ModBlocks.CHERRY_PLANKS_PEDESTAL).build(null));
+
+    public static final BlockEntityType<MangrovePlanksPedestalBlockEntity> MANGROVE_PLANKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "mangrove_planks_pedestal_be"),
+                    BlockEntityType.Builder.create(MangrovePlanksPedestalBlockEntity::new, ModBlocks.MANGROVE_PLANKS_PEDESTAL).build(null));
+
+    public static final BlockEntityType<JunglePlanksPedestalBlockEntity> JUNGLE_PLANKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "jungle_planks_pedestal_be"),
+                    BlockEntityType.Builder.create(JunglePlanksPedestalBlockEntity::new, ModBlocks.JUNGLE_PLANKS_PEDESTAL).build(null));
+
+    public static final BlockEntityType<AcaciaPlanksPedestalBlockEntity> ACACIA_PLANKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "acacia_planks_pedestal_be"),
+                    BlockEntityType.Builder.create(AcaciaPlanksPedestalBlockEntity::new, ModBlocks.ACACIA_PLANKS_PEDESTAL).build(null));
+
+    public static final BlockEntityType<BambooPlanksPedestalBlockEntity> BAMBOO_PLANKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "bamboo_planks_pedestal_be"),
+                    BlockEntityType.Builder.create(BambooPlanksPedestalBlockEntity::new, ModBlocks.BAMBOO_PLANKS_PEDESTAL).build(null));
+
+    public static final BlockEntityType<ObsidianPedestalBlockEntity> OBSIDIAN_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "obsidian_pedestal_be"),
+                    BlockEntityType.Builder.create(ObsidianPedestalBlockEntity::new, ModBlocks.OBSIDIAN_PEDESTAL).build(null));
+
+    public static final BlockEntityType<CryingObsidianPedestalBlockEntity> CRYING_OBSIDIAN_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "crying_obsidian_pedestal_be"),
+                    BlockEntityType.Builder.create(CryingObsidianPedestalBlockEntity::new, ModBlocks.CRYING_OBSIDIAN_PEDESTAL).build(null));
+
+    public static final BlockEntityType<PolishedDeepslatePedestalBlockEntity> POLISHED_DEEPSLATE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "polished_deepslate_pedestal_be"),
+                    BlockEntityType.Builder.create(PolishedDeepslatePedestalBlockEntity::new, ModBlocks.POLISHED_DEEPSLATE_PEDESTAL).build(null));
 
     public static void registerBlockEntities() {
         Pedestals.LOGGER.info("Registering Block Entities for " + Pedestals.MOD_ID);

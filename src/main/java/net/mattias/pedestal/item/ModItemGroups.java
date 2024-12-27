@@ -24,6 +24,19 @@ public class ModItemGroups {
                         entries.add(ModBlocks.JUNGLE_LOG_PEDESTAL);
                         entries.add(ModBlocks.CHERRY_LOG_PEDESTAL);
                         entries.add(ModBlocks.MANGROVE_LOG_PEDESTAL);
+                        entries.add(ModBlocks.OAK_PLANKS_PEDESTAL);
+                        entries.add(ModBlocks.BIRCH_PLANKS_PEDESTAL);
+                        entries.add(ModBlocks.DARK_OAK_PLANKS_PEDESTAL);
+                        entries.add(ModBlocks.SPRUCE_PLANKS_PEDESTAL);
+                        entries.add(ModBlocks.ACACIA_PLANKS_PEDESTAL);
+                        entries.add(ModBlocks.JUNGLE_PLANKS_PEDESTAL);
+                        entries.add(ModBlocks.CHERRY_PLANKS_PEDESTAL);
+                        entries.add(ModBlocks.MANGROVE_PLANKS_PEDESTAL);
+                        entries.add(ModBlocks.BAMBOO_PLANKS_PEDESTAL);
+                        entries.add(ModBlocks.POLISHED_DEEPSLATE_PEDESTAL);
+                        entries.add(ModBlocks.OBSIDIAN_PEDESTAL);
+                        entries.add(ModBlocks.CRYING_OBSIDIAN_PEDESTAL);
+
 
 
                     }).build());

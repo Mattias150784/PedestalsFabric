@@ -8,6 +8,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
@@ -30,7 +31,20 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         pedestalRecipe(exporter, ModBlocks.JUNGLE_LOG_PEDESTAL, Blocks.JUNGLE_LOG);
         pedestalRecipe(exporter, ModBlocks.CHERRY_LOG_PEDESTAL, Blocks.CHERRY_LOG);
         pedestalRecipe(exporter, ModBlocks.MANGROVE_LOG_PEDESTAL, Blocks.MANGROVE_LOG);
-        // planksPedestalRecipe(exporter, ModBlocks.OAK_PLANKS_PEDESTAL, Blocks.OAK_PLANKS);
+
+        planksPedestalRecipe(exporter, ModBlocks.OAK_PLANKS_PEDESTAL, Blocks.OAK_PLANKS);
+        planksPedestalRecipe(exporter, ModBlocks.BIRCH_PLANKS_PEDESTAL, Blocks.BIRCH_PLANKS);
+        planksPedestalRecipe(exporter, ModBlocks.DARK_OAK_PLANKS_PEDESTAL, Blocks.DARK_OAK_PLANKS);
+        planksPedestalRecipe(exporter, ModBlocks.SPRUCE_PLANKS_PEDESTAL, Blocks.SPRUCE_PLANKS);
+        planksPedestalRecipe(exporter, ModBlocks.ACACIA_PLANKS_PEDESTAL, Blocks.ACACIA_PLANKS);
+        planksPedestalRecipe(exporter, ModBlocks.JUNGLE_PLANKS_PEDESTAL, Blocks.JUNGLE_PLANKS);
+        planksPedestalRecipe(exporter, ModBlocks.CHERRY_PLANKS_PEDESTAL, Blocks.CHERRY_PLANKS);
+        planksPedestalRecipe(exporter, ModBlocks.MANGROVE_PLANKS_PEDESTAL, Blocks.MANGROVE_PLANKS);
+        planksPedestalRecipe(exporter, ModBlocks.BAMBOO_PLANKS_PEDESTAL, Items.BAMBOO);
+
+        planksPedestalRecipe(exporter, ModBlocks.POLISHED_DEEPSLATE_PEDESTAL, Blocks.POLISHED_DEEPSLATE);
+        planksPedestalRecipe(exporter, ModBlocks.CRYING_OBSIDIAN_PEDESTAL, Blocks.CRYING_OBSIDIAN);
+        planksPedestalRecipe(exporter, ModBlocks.OBSIDIAN_PEDESTAL, Blocks.OBSIDIAN);
     }
 
     private void pedestalRecipe(RecipeExporter exporter, ItemConvertible pedestalBlock, ItemConvertible material) {
@@ -46,12 +60,14 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
 
     private void planksPedestalRecipe(RecipeExporter exporter, ItemConvertible pedestalBlock, ItemConvertible material) {
+        String pedestalName = pedestalBlock.asItem().getTranslationKey().replace("block.minecraft.", "");
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, pedestalBlock)
                 .pattern(" P ")
                 .pattern(" P ")
                 .pattern(" P ")
                 .input('P', material)
                 .criterion(hasItem(material), conditionsFromItem(material))
-                .offerTo(exporter, Identifier.of(Pedestals.MOD_ID, "planks_pedestal"));
+                .offerTo(exporter, Identifier.of(Pedestals.MOD_ID, pedestalName + "_planks_pedestal"));
     }
 }
+

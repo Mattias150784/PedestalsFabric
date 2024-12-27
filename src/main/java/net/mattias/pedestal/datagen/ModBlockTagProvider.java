@@ -20,7 +20,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.PEDESTAL
+                .add(ModBlocks.PEDESTAL,
+                        ModBlocks.POLISHED_DEEPSLATE_PEDESTAL,
+                        ModBlocks.CRYING_OBSIDIAN_PEDESTAL,
+                        ModBlocks.OBSIDIAN_PEDESTAL
                       );
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
@@ -31,20 +34,31 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.CHERRY_LOG_PEDESTAL,
                         ModBlocks.ACACIA_LOG_PEDESTAL,
                         ModBlocks.JUNGLE_LOG_PEDESTAL,
-                        ModBlocks.MANGROVE_LOG_PEDESTAL
-
+                        ModBlocks.MANGROVE_LOG_PEDESTAL,
+                        ModBlocks.OAK_PLANKS_PEDESTAL,
+                        ModBlocks.BIRCH_PLANKS_PEDESTAL,
+                        ModBlocks.DARK_OAK_PLANKS_PEDESTAL,
+                        ModBlocks.SPRUCE_PLANKS_PEDESTAL,
+                        ModBlocks.CHERRY_PLANKS_PEDESTAL,
+                        ModBlocks.ACACIA_PLANKS_PEDESTAL,
+                        ModBlocks.JUNGLE_PLANKS_PEDESTAL,
+                        ModBlocks.MANGROVE_PLANKS_PEDESTAL,
+                        ModBlocks.BAMBOO_PLANKS_PEDESTAL
 
                 );
 
+getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.POLISHED_DEEPSLATE_PEDESTAL);
 
-      /*  getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+
+       getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.OBSIDIAN_PEDESTAL,
-                        ModBlocks.CRYING_OBSIDIAN);
+                        ModBlocks.CRYING_OBSIDIAN_PEDESTAL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PEDESTAL);
 
-       */
+
 
 
     }
