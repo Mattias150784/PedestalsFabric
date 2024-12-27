@@ -2,6 +2,7 @@ package net.mattias.pedestal;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.mattias.pedestal.blocks.entity.ModBlockEntities;
+import net.mattias.pedestal.blocks.entity.custom.StoneBricksPedestalBlockEntity;
 import net.mattias.pedestal.blocks.entity.renderer.*;
 import net.mattias.pedestal.screen.ModScreenHandlers;
 import net.mattias.pedestal.screen.custom.*;
@@ -34,8 +35,17 @@ public class PedestalModClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(ModBlockEntities.POLISHED_DEEPSLATE_PEDESTAL_BE, PolishedDeepslatePedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.CRYING_OBSIDIAN_PEDESTAL_BE, CryingObsidianPedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.OBSIDIAN_PEDESTAL_BE, ObsidianPedestalBlockEntityRenderer::new);
-
-
+        BlockEntityRendererFactories.register(ModBlockEntities.POLISHED_ANDESITE_PEDESTAL_BE, PolishedAndesitePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.POLISHED_DIORITE_PEDESTAL_BE, PolishedDioritePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.POLISHED_GRANITE_PEDESTAL_BE, PolishedGranitePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.ANDESITE_PEDESTAL_BE, AndesitePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.DIORITE_PEDESTAL_BE, DioritePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.GRANITE_PEDESTAL_BE, GranitePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.POLISHED_TUFF_PEDESTAL_BE, PolishedTuffPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.SMOOTH_STONE_PEDESTAL_BE, SmoothStonePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.STONE_BRICKS_PEDESTAL_BE, StoneBricksPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.STONE_PEDESTAL_BE, StonePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.COBBLESTONE_PEDESTAL_BE, CobblestonePedestalBlockEntityRenderer::new);
 
 
         HandledScreens.register(ModScreenHandlers.PEDESTAL_SCREEN_HANDLER, PedestalScreen::new);
@@ -59,5 +69,17 @@ public class PedestalModClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.POLISHED_DEEPSLATE_PEDESTAL_SCREEN_HANDLER, PolishedDeepslatePedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.CRYING_OBSIDIAN_PEDESTAL_SCREEN_HANDLER, CryingObsidianPedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.OBSIDIAN_PEDESTAL_SCREEN_HANDLER, ObsidianPedestalScreen::new);
+
+        HandledScreens.register(ModScreenHandlers.POLISHED_DIORITE_PEDESTAL_SCREEN_HANDLER, PolishedDioritePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.POLISHED_ANDESITE_PEDESTAL_SCREEN_HANDLER, PolishedAndesitePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.POLISHED_GRANITE_PEDESTAL_SCREEN_HANDLER, PolishedGranitePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.ANDESITE_PEDESTAL_SCREEN_HANDLER, AndesitePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.GRANITE_PEDESTAL_SCREEN_HANDLER, GranitePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.DIORITE_PEDESTAL_SCREEN_HANDLER, DioritePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.POLISHED_TUFF_PEDESTAL_SCREEN_HANDLER, PolishedTuffPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.STONE_PEDESTAL_SCREEN_HANDLER, StonePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.STONE_BRICKS_PEDESTAL_SCREEN_HANDLER, StoneBricksPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.SMOOTH_STONE_PEDESTAL_SCREEN_HANDLER, SmoothStonePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.COBBLESTONE_PEDESTAL_SCREEN_HANDLER, CobblestonePedestalScreen::new);
     }
 }

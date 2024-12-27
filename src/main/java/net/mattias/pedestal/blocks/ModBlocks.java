@@ -76,6 +76,39 @@ public class ModBlocks {
     public static final Block CRYING_OBSIDIAN_PEDESTAL = registerBlock("crying_obsidian_pedestal",
             new CryingObsidianPedestalBlock(AbstractBlock.Settings.copy(Blocks.CRYING_OBSIDIAN).nonOpaque()));
 
+    public static final Block COBBLESTONE_PEDESTAL = registerBlock("cobblestone_pedestal",
+            new CobblestonePedestalBlock(AbstractBlock.Settings.copy(Blocks.COBBLESTONE).nonOpaque()));
+
+    public static final Block STONE_PEDESTAL = registerBlock("stone_pedestal",
+            new StonePedestalBlock(AbstractBlock.Settings.copy(Blocks.STONE).nonOpaque()));
+
+    public static final Block SMOOTH_STONE_PEDESTAL = registerBlock("smooth_stone_pedestal",
+            new SmoothStonePedestalBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_STONE).nonOpaque()));
+
+    public static final Block STONE_BRICKS_PEDESTAL = registerBlock("stone_bricks_pedestal",
+            new StoneBricksPedestalBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS).nonOpaque()));
+
+    public static final Block POLISHED_ANDESITE_PEDESTAL = registerBlock("polished_andesite_pedestal",
+            new PolishedAndesitePedestalBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE).nonOpaque()));
+
+    public static final Block POLISHED_DIORITE_PEDESTAL = registerBlock("polished_diorite_pedestal",
+            new PolishedDioritePedestalBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_DIORITE).nonOpaque()));
+
+    public static final Block POLISHED_GRANITE_PEDESTAL = registerBlock("polished_granite_pedestal",
+            new PolishedGranitePedestalBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_GRANITE).nonOpaque()));
+
+    public static final Block POLISHED_TUFF_PEDESTAL = registerBlock("polished_tuff_pedestal",
+            new PolishedTuffPedestalBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_TUFF).nonOpaque()));
+
+    public static final Block ANDESITE_PEDESTAL = registerBlock("andesite_pedestal",
+            new AndesitePedestalBlock(AbstractBlock.Settings.copy(Blocks.ANDESITE).nonOpaque()));
+
+    public static final Block DIORITE_PEDESTAL = registerBlock("diorite_pedestal",
+            new DioritePedestalBlock(AbstractBlock.Settings.copy(Blocks.DIORITE).nonOpaque()));
+
+    public static final Block GRANITE_PEDESTAL = registerBlock("granite_pedestal",
+            new GranitePedestalBlock(AbstractBlock.Settings.copy(Blocks.GRANITE).nonOpaque()));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(Pedestals.MOD_ID, name), block);

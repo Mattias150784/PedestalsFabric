@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_obsidian": {
+    "has_polished_tuff": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:obsidian"
+            "items": "minecraft:polished_tuff"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "pedestals:block.pedestals.obsidian_pedestal_planks_pedestal"
+        "recipe": "pedestals:block.pedestals.polished_tuff_pedestal_pedestal"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_obsidian"
+      "has_polished_tuff"
     ]
   ],
   "rewards": {
     "recipes": [
-      "pedestals:block.pedestals.obsidian_pedestal_planks_pedestal"
+      "pedestals:block.pedestals.polished_tuff_pedestal_pedestal"
     ]
   }
 }

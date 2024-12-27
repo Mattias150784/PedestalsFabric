@@ -36,6 +36,18 @@ public class ModItemGroups {
                         entries.add(ModBlocks.POLISHED_DEEPSLATE_PEDESTAL);
                         entries.add(ModBlocks.OBSIDIAN_PEDESTAL);
                         entries.add(ModBlocks.CRYING_OBSIDIAN_PEDESTAL);
+                        entries.add(ModBlocks.POLISHED_ANDESITE_PEDESTAL);
+                        entries.add(ModBlocks.POLISHED_GRANITE_PEDESTAL);
+                        entries.add(ModBlocks.POLISHED_DIORITE_PEDESTAL);
+                        entries.add(ModBlocks.ANDESITE_PEDESTAL);
+                        entries.add(ModBlocks.GRANITE_PEDESTAL);
+                        entries.add(ModBlocks.DIORITE_PEDESTAL);
+                        entries.add(ModBlocks.STONE_PEDESTAL);
+                        entries.add(ModBlocks.COBBLESTONE_PEDESTAL);
+                        entries.add(ModBlocks.SMOOTH_STONE_PEDESTAL);
+                        entries.add(ModBlocks.STONE_BRICKS_PEDESTAL);
+                        entries.add(ModBlocks.POLISHED_TUFF_PEDESTAL);
+
 
 
 

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_polished_deepslate": {
+    "has_polished_diorite": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:polished_deepslate"
+            "items": "minecraft:polished_diorite"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "pedestals:block.pedestals.polished_deepslate_pedestal_planks_pedestal"
+        "recipe": "pedestals:block.pedestals.polished_diorite_pedestal_pedestal"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_polished_deepslate"
+      "has_polished_diorite"
     ]
   ],
   "rewards": {
     "recipes": [
-      "pedestals:block.pedestals.polished_deepslate_pedestal_planks_pedestal"
+      "pedestals:block.pedestals.polished_diorite_pedestal_pedestal"
     ]
   }
 }

@@ -47,6 +47,18 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CRYING_OBSIDIAN_PEDESTAL);
         addDrop(ModBlocks.OBSIDIAN_PEDESTAL);
 
+        addDrop(ModBlocks.POLISHED_GRANITE_PEDESTAL);
+        addDrop(ModBlocks.POLISHED_DIORITE_PEDESTAL);
+        addDrop(ModBlocks.POLISHED_ANDESITE_PEDESTAL);
+        addDrop(ModBlocks.POLISHED_TUFF_PEDESTAL);
+        addDrop(ModBlocks.GRANITE_PEDESTAL);
+        addDrop(ModBlocks.DIORITE_PEDESTAL);
+        addDrop(ModBlocks.ANDESITE_PEDESTAL);
+        addDrop(ModBlocks.STONE_BRICKS_PEDESTAL);
+        addDrop(ModBlocks.STONE_PEDESTAL);
+        addDrop(ModBlocks.SMOOTH_STONE_PEDESTAL);
+        addDrop(ModBlocks.COBBLESTONE_PEDESTAL);
+
 
     }
 

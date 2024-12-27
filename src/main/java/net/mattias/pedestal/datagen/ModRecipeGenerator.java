@@ -31,6 +31,22 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         pedestalRecipe(exporter, ModBlocks.JUNGLE_LOG_PEDESTAL, Blocks.JUNGLE_LOG);
         pedestalRecipe(exporter, ModBlocks.CHERRY_LOG_PEDESTAL, Blocks.CHERRY_LOG);
         pedestalRecipe(exporter, ModBlocks.MANGROVE_LOG_PEDESTAL, Blocks.MANGROVE_LOG);
+        pedestalRecipe(exporter, ModBlocks.POLISHED_DEEPSLATE_PEDESTAL, Blocks.POLISHED_DEEPSLATE);
+        pedestalRecipe(exporter, ModBlocks.CRYING_OBSIDIAN_PEDESTAL, Blocks.CRYING_OBSIDIAN);
+        pedestalRecipe(exporter, ModBlocks.OBSIDIAN_PEDESTAL, Blocks.OBSIDIAN);
+
+        pedestalRecipe(exporter, ModBlocks.POLISHED_ANDESITE_PEDESTAL, Blocks.POLISHED_ANDESITE);
+        pedestalRecipe(exporter, ModBlocks.POLISHED_DIORITE_PEDESTAL, Blocks.POLISHED_DIORITE);
+        pedestalRecipe(exporter, ModBlocks.POLISHED_GRANITE_PEDESTAL, Blocks.POLISHED_GRANITE);
+        pedestalRecipe(exporter, ModBlocks.POLISHED_TUFF_PEDESTAL, Blocks.POLISHED_TUFF);
+        pedestalRecipe(exporter, ModBlocks.ANDESITE_PEDESTAL, Blocks.ANDESITE);
+        pedestalRecipe(exporter, ModBlocks.DIORITE_PEDESTAL, Blocks.DIORITE);
+        pedestalRecipe(exporter, ModBlocks.GRANITE_PEDESTAL, Blocks.GRANITE);
+        pedestalRecipe(exporter, ModBlocks.STONE_PEDESTAL, Blocks.STONE);
+        pedestalRecipe(exporter, ModBlocks.STONE_BRICKS_PEDESTAL, Blocks.STONE_BRICKS);
+        pedestalRecipe(exporter, ModBlocks.SMOOTH_STONE_PEDESTAL, Blocks.SMOOTH_STONE);
+        pedestalRecipe(exporter, ModBlocks.COBBLESTONE_PEDESTAL, Blocks.COBBLESTONE);
+
 
         planksPedestalRecipe(exporter, ModBlocks.OAK_PLANKS_PEDESTAL, Blocks.OAK_PLANKS);
         planksPedestalRecipe(exporter, ModBlocks.BIRCH_PLANKS_PEDESTAL, Blocks.BIRCH_PLANKS);
@@ -42,9 +58,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         planksPedestalRecipe(exporter, ModBlocks.MANGROVE_PLANKS_PEDESTAL, Blocks.MANGROVE_PLANKS);
         planksPedestalRecipe(exporter, ModBlocks.BAMBOO_PLANKS_PEDESTAL, Items.BAMBOO);
 
-        planksPedestalRecipe(exporter, ModBlocks.POLISHED_DEEPSLATE_PEDESTAL, Blocks.POLISHED_DEEPSLATE);
-        planksPedestalRecipe(exporter, ModBlocks.CRYING_OBSIDIAN_PEDESTAL, Blocks.CRYING_OBSIDIAN);
-        planksPedestalRecipe(exporter, ModBlocks.OBSIDIAN_PEDESTAL, Blocks.OBSIDIAN);
+
     }
 
     private void pedestalRecipe(RecipeExporter exporter, ItemConvertible pedestalBlock, ItemConvertible material) {

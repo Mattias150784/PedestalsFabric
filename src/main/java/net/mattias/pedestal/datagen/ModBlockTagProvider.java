@@ -23,7 +23,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PEDESTAL,
                         ModBlocks.POLISHED_DEEPSLATE_PEDESTAL,
                         ModBlocks.CRYING_OBSIDIAN_PEDESTAL,
-                        ModBlocks.OBSIDIAN_PEDESTAL
+                        ModBlocks.OBSIDIAN_PEDESTAL,
+                        ModBlocks.POLISHED_ANDESITE_PEDESTAL,
+                        ModBlocks.POLISHED_DIORITE_PEDESTAL,
+                        ModBlocks.POLISHED_GRANITE_PEDESTAL,
+                        ModBlocks.POLISHED_TUFF_PEDESTAL,
+                        ModBlocks.ANDESITE_PEDESTAL,
+                        ModBlocks.DIORITE_PEDESTAL,
+                        ModBlocks.GRANITE_PEDESTAL,
+                        ModBlocks.SMOOTH_STONE_PEDESTAL,
+                        ModBlocks.STONE_BRICKS_PEDESTAL,
+                        ModBlocks.STONE_PEDESTAL,
+                        ModBlocks.COBBLESTONE_PEDESTAL
                       );
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
@@ -47,8 +58,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
                 );
 
-getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.POLISHED_DEEPSLATE_PEDESTAL);
+// getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+ //               .add(ModBlocks.POLISHED_DEEPSLATE_PEDESTAL);
 
 
        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)

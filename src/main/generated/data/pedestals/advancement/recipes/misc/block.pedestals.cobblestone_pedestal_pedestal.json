@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_crying_obsidian": {
+    "has_cobblestone": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:crying_obsidian"
+            "items": "minecraft:cobblestone"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "pedestals:block.pedestals.crying_obsidian_pedestal_planks_pedestal"
+        "recipe": "pedestals:block.pedestals.cobblestone_pedestal_pedestal"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_crying_obsidian"
+      "has_cobblestone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "pedestals:block.pedestals.crying_obsidian_pedestal_planks_pedestal"
+      "pedestals:block.pedestals.cobblestone_pedestal_pedestal"
     ]
   }
 }

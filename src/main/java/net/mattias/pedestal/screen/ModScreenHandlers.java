@@ -94,7 +94,49 @@ public class ModScreenHandlers {
             Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "crying_obsidian_pedestal_screen_handler"),
                     new ExtendedScreenHandlerType<>(CryingObsidianPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
 
+    public static final ScreenHandlerType<GranitePedestalScreenHandler> GRANITE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "granite_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(GranitePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
 
+    public static final ScreenHandlerType<DioritePedestalScreenHandler> DIORITE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "diorite_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(DioritePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<AndesitePedestalScreenHandler> ANDESITE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "andesite_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(AndesitePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<CobblestonePedestalScreenHandler> COBBLESTONE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "cobblestone_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(CobblestonePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<StonePedestalScreenHandler> STONE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "stone_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(StonePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<PolishedAndesitePedestalScreenHandler> POLISHED_ANDESITE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "polished_andesite_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(PolishedAndesitePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<PolishedGranitePedestalScreenHandler> POLISHED_GRANITE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "polished_granite_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(PolishedGranitePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+    
+    public static final ScreenHandlerType<PolishedDioritePedestalScreenHandler> POLISHED_DIORITE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "polished_diorite_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(PolishedDioritePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<SmoothStonePedestalScreenHandler> SMOOTH_STONE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "smooth_stone_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(SmoothStonePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<StoneBricksPedestalScreenHandler> STONE_BRICKS_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "stone_bricks_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(StoneBricksPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<PolishedTuffPedestalScreenHandler> POLISHED_TUFF_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "polished_tuff_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(PolishedTuffPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
 
 
 

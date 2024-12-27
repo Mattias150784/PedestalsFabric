@@ -94,6 +94,50 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "polished_deepslate_pedestal_be"),
                     BlockEntityType.Builder.create(PolishedDeepslatePedestalBlockEntity::new, ModBlocks.POLISHED_DEEPSLATE_PEDESTAL).build(null));
 
+    public static final BlockEntityType<CobblestonePedestalBlockEntity> COBBLESTONE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "cobblestone_pedestal_be"),
+                    BlockEntityType.Builder.create(CobblestonePedestalBlockEntity::new, ModBlocks.COBBLESTONE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<StonePedestalBlockEntity> STONE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "stone_pedestal_be"),
+                    BlockEntityType.Builder.create(StonePedestalBlockEntity::new, ModBlocks.STONE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<StoneBricksPedestalBlockEntity> STONE_BRICKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "stone_bricks_pedestal_be"),
+                    BlockEntityType.Builder.create(StoneBricksPedestalBlockEntity::new, ModBlocks.STONE_BRICKS_PEDESTAL).build(null));
+
+    public static final BlockEntityType<SmoothStonePedestalBlockEntity> SMOOTH_STONE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "smooth_stone_pedestal_be"),
+                    BlockEntityType.Builder.create(SmoothStonePedestalBlockEntity::new, ModBlocks.SMOOTH_STONE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<PolishedAndesitePedestalBlockEntity> POLISHED_ANDESITE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "polished_andesite_pedestal_be"),
+                    BlockEntityType.Builder.create(PolishedAndesitePedestalBlockEntity::new, ModBlocks.POLISHED_ANDESITE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<PolishedDioritePedestalBlockEntity> POLISHED_DIORITE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "polished_diorite_pedestal_be"),
+                    BlockEntityType.Builder.create(PolishedDioritePedestalBlockEntity::new, ModBlocks.POLISHED_DIORITE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<PolishedGranitePedestalBlockEntity> POLISHED_GRANITE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "polished_granite_pedestal_be"),
+                    BlockEntityType.Builder.create(PolishedGranitePedestalBlockEntity::new, ModBlocks.POLISHED_GRANITE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<PolishedTuffPedestalBlockEntity> POLISHED_TUFF_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "polished_tuff_pedestal_be"),
+                    BlockEntityType.Builder.create(PolishedTuffPedestalBlockEntity::new, ModBlocks.POLISHED_TUFF_PEDESTAL).build(null));
+
+    public static final BlockEntityType<AndesitePedestalBlockEntity> ANDESITE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "andesite_pedestal_be"),
+                    BlockEntityType.Builder.create(AndesitePedestalBlockEntity::new, ModBlocks.ANDESITE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<DioritePedestalBlockEntity> DIORITE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "diorite_pedestal_be"),
+                    BlockEntityType.Builder.create(DioritePedestalBlockEntity::new, ModBlocks.DIORITE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<GranitePedestalBlockEntity> GRANITE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "granite_pedestal_be"),
+                    BlockEntityType.Builder.create(GranitePedestalBlockEntity::new, ModBlocks.GRANITE_PEDESTAL).build(null));
+
     public static void registerBlockEntities() {
         Pedestals.LOGGER.info("Registering Block Entities for " + Pedestals.MOD_ID);
     }
