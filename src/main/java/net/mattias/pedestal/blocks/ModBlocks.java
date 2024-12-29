@@ -109,6 +109,26 @@ public class ModBlocks {
     public static final Block GRANITE_PEDESTAL = registerBlock("granite_pedestal",
             new GranitePedestalBlock(AbstractBlock.Settings.copy(Blocks.GRANITE).nonOpaque()));
 
+    public static final Block BRICKS_PEDESTAL = registerBlock("bricks_pedestal",
+            new BricksPedestalBlock(AbstractBlock.Settings.copy(Blocks.BRICKS).nonOpaque()));
+
+    public static final Block QUARTZ_PEDESTAL = registerBlock("quartz_pedestal",
+            new QuartzPedestalBlock(AbstractBlock.Settings.copy(Blocks.QUARTZ_BLOCK).nonOpaque()));
+
+    public static final Block QUARTZ_PILLAR_PEDESTAL = registerBlock("quartz_pillar_pedestal",
+            new QuartzPillarPedestalBlock(AbstractBlock.Settings.copy(Blocks.QUARTZ_PILLAR).nonOpaque()));
+
+    public static final Block MOSSY_COBBLESTONE_PEDESTAL = registerBlock("mossy_cobblestone_pedestal",
+            new MossyCobblestonePedestalBlock(AbstractBlock.Settings.copy(Blocks.MOSSY_COBBLESTONE).nonOpaque()));
+
+    public static final Block MOSSY_STONE_BRICKS_PEDESTAL = registerBlock("mossy_stone_bricks_pedestal",
+            new MossyStoneBricksPedestalBlock(AbstractBlock.Settings.copy(Blocks.MOSSY_STONE_BRICKS).nonOpaque()));
+
+    public static final Block RED_SANDSTONE_PEDESTAL = registerBlock("red_sandstone_pedestal",
+            new RedSandstonePedestalBlock(AbstractBlock.Settings.copy(Blocks.RED_SANDSTONE).nonOpaque()));
+
+    public static final Block SANDSTONE_PEDESTAL = registerBlock("sandstone_pedestal",
+            new SandstonePedestalBlock(AbstractBlock.Settings.copy(Blocks.SANDSTONE).nonOpaque()));
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(Pedestals.MOD_ID, name), block);

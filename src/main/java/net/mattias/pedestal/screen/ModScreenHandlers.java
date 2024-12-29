@@ -138,7 +138,33 @@ public class ModScreenHandlers {
             Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "polished_tuff_pedestal_screen_handler"),
                     new ExtendedScreenHandlerType<>(PolishedTuffPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
 
+    public static final ScreenHandlerType<QuartzPedestalScreenHandler> QUARTZ_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "quartz_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(QuartzPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
 
+    public static final ScreenHandlerType<BricksPedestalScreenHandler> BRICKS_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "bricks_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(BricksPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<SandstonePedestalScreenHandler> SANDSTONE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "sandstone_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(SandstonePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<MossyCobblestonePedestalScreenHandler> MOSSY_COBBLESTONE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "mossy_cobblestone_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(MossyCobblestonePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<MossyStoneBricksPedestalScreenHandler> MOSSY_STONE_BRICKS_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "mossy_stone_bricks_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(MossyStoneBricksPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<QuartzPillarPedestalScreenHandler> QUARTZ_PILLAR_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "quartz_pillar_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(QuartzPillarPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<RedSandstonePedestalScreenHandler> RED_SANDSTONE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "red_sandstone_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(RedSandstonePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
 
     public static void registerScreenHandlers() {
         Pedestals.LOGGER.info("Registering Screen Handlers for " + Pedestals.MOD_ID);

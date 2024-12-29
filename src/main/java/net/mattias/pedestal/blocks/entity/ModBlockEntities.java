@@ -138,6 +138,33 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "granite_pedestal_be"),
                     BlockEntityType.Builder.create(GranitePedestalBlockEntity::new, ModBlocks.GRANITE_PEDESTAL).build(null));
 
+    public static final BlockEntityType<QuartzPillarPedestalBlockEntity> QUARTZ_PILLAR_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "quartz_pillar_pedestal_be"),
+                    BlockEntityType.Builder.create(QuartzPillarPedestalBlockEntity::new, ModBlocks.QUARTZ_PILLAR_PEDESTAL).build(null));
+
+    public static final BlockEntityType<BricksPedestalBlockEntity> BRICKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "bricks_pedestal_be"),
+                    BlockEntityType.Builder.create(BricksPedestalBlockEntity::new, ModBlocks.BRICKS_PEDESTAL).build(null));
+
+    public static final BlockEntityType<MossyCobblestonePedestalBlockEntity> MOSSY_COBBLESTONE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "mossy_cobblestone_pedestal_be"),
+                    BlockEntityType.Builder.create(MossyCobblestonePedestalBlockEntity::new, ModBlocks.MOSSY_COBBLESTONE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<QuartzPedestalBlockEntity> QUARTZ_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "quartz_pedestal_be"),
+                    BlockEntityType.Builder.create(QuartzPedestalBlockEntity::new, ModBlocks.QUARTZ_PEDESTAL).build(null));
+
+    public static final BlockEntityType<MossyStoneBricksPedestalBlockEntity> MOSSY_STONE_BRICKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "mossy_stone_bricks_pedestal_be"),
+                    BlockEntityType.Builder.create(MossyStoneBricksPedestalBlockEntity::new, ModBlocks.MOSSY_STONE_BRICKS_PEDESTAL).build(null));
+
+    public static final BlockEntityType<RedSandstonePedestalBlockEntity> RED_SANDSTONE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "red_sandstone_pedestal_be"),
+                    BlockEntityType.Builder.create(RedSandstonePedestalBlockEntity::new, ModBlocks.RED_SANDSTONE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<SandstonePedestalBlockEntity> SANDSTONE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "sandstone_pedestal_be"),
+                    BlockEntityType.Builder.create(SandstonePedestalBlockEntity::new, ModBlocks.SANDSTONE_PEDESTAL).build(null));
     public static void registerBlockEntities() {
         Pedestals.LOGGER.info("Registering Block Entities for " + Pedestals.MOD_ID);
     }

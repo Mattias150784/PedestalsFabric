@@ -34,7 +34,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.SMOOTH_STONE_PEDESTAL,
                         ModBlocks.STONE_BRICKS_PEDESTAL,
                         ModBlocks.STONE_PEDESTAL,
-                        ModBlocks.COBBLESTONE_PEDESTAL
+                        ModBlocks.COBBLESTONE_PEDESTAL,
+                        ModBlocks.QUARTZ_PEDESTAL,
+                        ModBlocks.QUARTZ_PILLAR_PEDESTAL,
+                        ModBlocks.RED_SANDSTONE_PEDESTAL,
+                        ModBlocks.SANDSTONE_PEDESTAL,
+                        ModBlocks.BRICKS_PEDESTAL,
+                        ModBlocks.MOSSY_COBBLESTONE_PEDESTAL,
+                        ModBlocks.MOSSY_STONE_BRICKS_PEDESTAL
                       );
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)

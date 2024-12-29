@@ -14,6 +14,13 @@
     "pedestals:smooth_stone_pedestal",
     "pedestals:stone_bricks_pedestal",
     "pedestals:stone_pedestal",
-    "pedestals:cobblestone_pedestal"
+    "pedestals:cobblestone_pedestal",
+    "pedestals:quartz_pedestal",
+    "pedestals:quartz_pillar_pedestal",
+    "pedestals:red_sandstone_pedestal",
+    "pedestals:sandstone_pedestal",
+    "pedestals:bricks_pedestal",
+    "pedestals:mossy_cobblestone_pedestal",
+    "pedestals:mossy_stone_bricks_pedestal"
   ]
 }

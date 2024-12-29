@@ -34,7 +34,13 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         pedestalRecipe(exporter, ModBlocks.POLISHED_DEEPSLATE_PEDESTAL, Blocks.POLISHED_DEEPSLATE);
         pedestalRecipe(exporter, ModBlocks.CRYING_OBSIDIAN_PEDESTAL, Blocks.CRYING_OBSIDIAN);
         pedestalRecipe(exporter, ModBlocks.OBSIDIAN_PEDESTAL, Blocks.OBSIDIAN);
-
+        pedestalRecipe(exporter, ModBlocks.QUARTZ_PEDESTAL, Blocks.ACACIA_LOG);
+        pedestalRecipe(exporter, ModBlocks.QUARTZ_PILLAR_PEDESTAL, Blocks.JUNGLE_LOG);
+        pedestalRecipe(exporter, ModBlocks.RED_SANDSTONE_PEDESTAL, Blocks.CHERRY_LOG);
+        pedestalRecipe(exporter, ModBlocks.SANDSTONE_PEDESTAL, Blocks.MANGROVE_LOG);
+        pedestalRecipe(exporter, ModBlocks.MOSSY_STONE_BRICKS_PEDESTAL, Blocks.POLISHED_DEEPSLATE);
+        pedestalRecipe(exporter, ModBlocks.MOSSY_COBBLESTONE_PEDESTAL, Blocks.CRYING_OBSIDIAN);
+        pedestalRecipe(exporter, ModBlocks.BRICKS_PEDESTAL, Blocks.OBSIDIAN);
         pedestalRecipe(exporter, ModBlocks.POLISHED_ANDESITE_PEDESTAL, Blocks.POLISHED_ANDESITE);
         pedestalRecipe(exporter, ModBlocks.POLISHED_DIORITE_PEDESTAL, Blocks.POLISHED_DIORITE);
         pedestalRecipe(exporter, ModBlocks.POLISHED_GRANITE_PEDESTAL, Blocks.POLISHED_GRANITE);
