@@ -57,9 +57,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.RED_CONCRETE_PEDESTAL,
                         ModBlocks.WHITE_CONCRETE_PEDESTAL,
                         ModBlocks.YELLOW_CONCRETE_PEDESTAL,
-                        ModBlocks.PINK_CONCRETE_PEDESTAL
+                        ModBlocks.PINK_CONCRETE_PEDESTAL,
+                        ModBlocks.BLACKSTONE_PEDESTAL,
+                        ModBlocks.NETHER_BRICKS_PEDESTAL,
+                        ModBlocks.RED_NETHER_BRICKS_PEDESTAL,
+                        ModBlocks.NETHERRACK_PEDESTAL
                       );
 
+
+        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+            .add(ModBlocks.SOUL_SAND_PEDESTAL,
+                 ModBlocks.SOUL_SOIL_PEDESTAL
+
+                    );
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.OAK_LOG_PEDESTAL,
                         ModBlocks.BIRCH_LOG_PEDESTAL,

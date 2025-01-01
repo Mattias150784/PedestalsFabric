@@ -229,6 +229,35 @@ public class ModBlockEntities {
     public static final BlockEntityType<BlackConcretePedestalBlockEntity> BLACK_CONCRETE_PEDESTAL_BE =
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "black_concrete_pedestal_be"),
                     BlockEntityType.Builder.create(BlackConcretePedestalBlockEntity::new, ModBlocks.BLACK_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<BlackstonePedestalBlockEntity> BLACKSTONE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "blackstone_pedestal_be"),
+                    BlockEntityType.Builder.create(BlackstonePedestalBlockEntity::new, ModBlocks.BLACKSTONE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<NetherrackPedestalBlockEntity> NETHERRACK_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "netherrack_pedestal_be"),
+                    BlockEntityType.Builder.create(NetherrackPedestalBlockEntity::new, ModBlocks.NETHERRACK_PEDESTAL).build(null));
+
+    public static final BlockEntityType<SoulSandPedestalBlockEntity> SOUL_SAND_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "soul_sand_pedestal_be"),
+                    BlockEntityType.Builder.create(SoulSandPedestalBlockEntity::new, ModBlocks.SOUL_SAND_PEDESTAL).build(null));
+
+    public static final BlockEntityType<SoulSoilPedestalBlockEntity> SOUL_SOIL_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "soul_soil_pedestal_be"),
+                    BlockEntityType.Builder.create(SoulSoilPedestalBlockEntity::new, ModBlocks.SOUL_SOIL_PEDESTAL).build(null));
+
+    public static final BlockEntityType<NetherBricksPedestalBlockEntity> NETHER_BRICKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "nether_bricks_pedestal_be"),
+                    BlockEntityType.Builder.create(NetherBricksPedestalBlockEntity::new, ModBlocks.NETHER_BRICKS_PEDESTAL).build(null));
+
+    public static final BlockEntityType<RedNetherBricksPedestalBlockEntity> RED_NETHER_BRICKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "red_nether_bricks_pedestal_be"),
+                    BlockEntityType.Builder.create(RedNetherBricksPedestalBlockEntity::new, ModBlocks.RED_NETHER_BRICKS_PEDESTAL).build(null));
+    
+   
+   
+   
+   
     public static void registerBlockEntities() {
         Pedestals.LOGGER.info("Registering Block Entities for " + Pedestals.MOD_ID);
     }

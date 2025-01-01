@@ -229,6 +229,30 @@ public class ModScreenHandlers {
     public static final ScreenHandlerType<YellowConcretePedestalScreenHandler> YELLOW_CONCRETE_PEDESTAL_SCREEN_HANDLER =
             Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "yellow_concrete_pedestal_screen_handler"),
                     new ExtendedScreenHandlerType<>(YellowConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<BlackstonePedestalScreenHandler> BLACKSTONE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "blackstone_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(BlackstonePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<NetherrackPedestalScreenHandler> NETHERRACK_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "netherrack_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(NetherrackPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<SoulSandPedestalScreenHandler> SOUL_SAND_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "soul_sand_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(SoulSandPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<SoulSoilPedestalScreenHandler> SOUL_SOIL_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "soul_soil_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(SoulSoilPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<RedNetherBricksPedestalScreenHandler> RED_NETHER_BRICKS_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "red_nether_bricks_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(RedNetherBricksPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<NetherBricksPedestalScreenHandler> NETHER_BRICKS_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "nether_bricks_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(NetherBricksPedestalScreenHandler::new, BlockPos.PACKET_CODEC));
     
     public static void registerScreenHandlers() {
         Pedestals.LOGGER.info("Registering Screen Handlers for " + Pedestals.MOD_ID);

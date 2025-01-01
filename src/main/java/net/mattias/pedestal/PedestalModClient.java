@@ -69,6 +69,12 @@ public class PedestalModClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(ModBlockEntities.RED_CONCRETE_PEDESTAL_BE, RedConcretePedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.WHITE_CONCRETE_PEDESTAL_BE, WhiteConcretePedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.YELLOW_CONCRETE_PEDESTAL_BE, YellowConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.BLACKSTONE_PEDESTAL_BE, BlackstonePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.NETHERRACK_PEDESTAL_BE, NetherrackPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.NETHER_BRICKS_PEDESTAL_BE, NetherBricksPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.RED_NETHER_BRICKS_PEDESTAL_BE, RedNetherBricksPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.SOUL_SAND_PEDESTAL_BE, SoulSandPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.SOUL_SOIL_PEDESTAL_BE, SoulSoilPedestalBlockEntityRenderer::new);
 
         HandledScreens.register(ModScreenHandlers.PEDESTAL_SCREEN_HANDLER, PedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.OAK_LOG_PEDESTAL_SCREEN_HANDLER, OakLogPedestalScreen::new);
@@ -109,7 +115,12 @@ public class PedestalModClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.STONE_BRICKS_PEDESTAL_SCREEN_HANDLER, StoneBricksPedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.SMOOTH_STONE_PEDESTAL_SCREEN_HANDLER, SmoothStonePedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.COBBLESTONE_PEDESTAL_SCREEN_HANDLER, CobblestonePedestalScreen::new);
-
+        HandledScreens.register(ModScreenHandlers.BLACKSTONE_PEDESTAL_SCREEN_HANDLER, BlackstonePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.NETHERRACK_PEDESTAL_SCREEN_HANDLER, NetherrackPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.RED_NETHER_BRICKS_PEDESTAL_SCREEN_HANDLER, RedNetherBricksPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.NETHER_BRICKS_PEDESTAL_SCREEN_HANDLER, NetherBricksPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.SOUL_SAND_PEDESTAL_SCREEN_HANDLER, SoulSandPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.SOUL_SOIL_PEDESTAL_SCREEN_HANDLER, SoulSoilPedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.BLACK_CONCRETE_PEDESTAL_SCREEN_HANDLER, BlackConcretePedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.BLUE_CONCRETE_PEDESTAL_SCREEN_HANDLER, BlueConcretePedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.BROWN_CONCRETE_PEDESTAL_SCREEN_HANDLER, BrownConcretePedestalScreen::new);

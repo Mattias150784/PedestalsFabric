@@ -68,6 +68,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         pedestalRecipe(exporter, ModBlocks.RED_CONCRETE_PEDESTAL, Blocks.RED_CONCRETE);
         pedestalRecipe(exporter, ModBlocks.YELLOW_CONCRETE_PEDESTAL, Blocks.YELLOW_CONCRETE);
         pedestalRecipe(exporter, ModBlocks.WHITE_CONCRETE_PEDESTAL, Blocks.WHITE_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.BLACKSTONE_PEDESTAL, Blocks.BLACKSTONE);
+        pedestalRecipe(exporter, ModBlocks.NETHERRACK_PEDESTAL, Blocks.NETHERRACK);
+        pedestalRecipe(exporter, ModBlocks.RED_NETHER_BRICKS_PEDESTAL, Blocks.RED_NETHER_BRICKS);
+        pedestalRecipe(exporter, ModBlocks.NETHER_BRICKS_PEDESTAL, Blocks.NETHER_BRICKS);
+        pedestalRecipe(exporter, ModBlocks.SOUL_SAND_PEDESTAL, Blocks.SOUL_SAND);
+        pedestalRecipe(exporter, ModBlocks.SOUL_SOIL_PEDESTAL, Blocks.SOUL_SOIL);
 
         planksPedestalRecipe(exporter, ModBlocks.OAK_PLANKS_PEDESTAL, Blocks.OAK_PLANKS);
         planksPedestalRecipe(exporter, ModBlocks.BIRCH_PLANKS_PEDESTAL, Blocks.BIRCH_PLANKS);

@@ -177,6 +177,24 @@ public class ModBlocks {
 
     public static final Block YELLOW_CONCRETE_PEDESTAL = registerBlock("yellow_concrete_pedestal",
             new YellowConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.YELLOW_CONCRETE).nonOpaque()));
+
+    public static final Block BLACKSTONE_PEDESTAL = registerBlock("blackstone_pedestal",
+            new BlackstonePedestalBlock(AbstractBlock.Settings.copy(Blocks.BLACKSTONE).nonOpaque()));
+    
+    public static final Block NETHERRACK_PEDESTAL = registerBlock("netherrack_pedestal",
+            new NetherrackPedestalBlock(AbstractBlock.Settings.copy(Blocks.NETHERRACK).nonOpaque()));
+
+    public static final Block SOUL_SAND_PEDESTAL = registerBlock("soul_sand_pedestal",
+            new SoulSandPedestalBlock(AbstractBlock.Settings.copy(Blocks.SOUL_SAND).nonOpaque()));
+
+    public static final Block SOUL_SOIL_PEDESTAL = registerBlock("soul_soil_pedestal",
+            new SoulSoilPedestalBlock(AbstractBlock.Settings.copy(Blocks.SOUL_SOIL).nonOpaque()));
+
+    public static final Block RED_NETHER_BRICKS_PEDESTAL = registerBlock("red_nether_bricks_pedestal",
+            new RedNetherBricksPedestalBlock(AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS).nonOpaque()));
+
+    public static final Block NETHER_BRICKS_PEDESTAL = registerBlock("nether_bricks_pedestal",
+            new NetherBricksPedestalBlock(AbstractBlock.Settings.copy(Blocks.NETHER_BRICKS).nonOpaque()));
     
     
     

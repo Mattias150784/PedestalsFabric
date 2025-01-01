@@ -1,4 +1,5 @@
-// 1.21	2024-12-31T16:03:55.8162931	Pedestals/Tags for minecraft:block
-c19eca6b4d96a471e2cc9ef70bc1d93c1702376d data\minecraft\tags\block\mineable\pickaxe.json
+// 1.21	2024-12-31T16:42:49.0768162	Pedestals/Tags for minecraft:block
+34c580b55c28591d612642d2c7331fdbb57776c4 data\minecraft\tags\block\mineable\shovel.json
+bd01c9845769e4092ab0a083bb23f9ca68283c12 data\minecraft\tags\block\mineable\pickaxe.json
 e1bcf890ab18ac655bc548c0a12a56de07e53cab data\minecraft\tags\block\needs_diamond_tool.json
 607c417cc8a249e4cf2ec6dfb0950bb290ebf28b data\minecraft\tags\block\mineable\axe.json
