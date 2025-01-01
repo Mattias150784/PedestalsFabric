@@ -52,7 +52,22 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         pedestalRecipe(exporter, ModBlocks.STONE_BRICKS_PEDESTAL, Blocks.STONE_BRICKS);
         pedestalRecipe(exporter, ModBlocks.SMOOTH_STONE_PEDESTAL, Blocks.SMOOTH_STONE);
         pedestalRecipe(exporter, ModBlocks.COBBLESTONE_PEDESTAL, Blocks.COBBLESTONE);
-
+        pedestalRecipe(exporter, ModBlocks.BLUE_CONCRETE_PEDESTAL, Blocks.BLUE_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.BLACK_CONCRETE_PEDESTAL, Blocks.BLACK_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.BROWN_CONCRETE_PEDESTAL, Blocks.BROWN_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.CYAN_CONCRETE_PEDESTAL, Blocks.CYAN_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.GRAY_CONCRETE_PEDESTAL, Blocks.GRAY_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.GREEN_CONCRETE_PEDESTAL, Blocks.GREEN_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.LIGHT_BLUE_CONCRETE_PEDESTAL, Blocks.LIGHT_BLUE_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.LIGHT_GRAY_CONCRETE_PEDESTAL, Blocks.LIGHT_GRAY_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.LIME_CONCRETE_PEDESTAL, Blocks.LIME_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.MAGENTA_CONCRETE_PEDESTAL, Blocks.MAGENTA_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.PINK_CONCRETE_PEDESTAL, Blocks.PINK_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.ORANGE_CONCRETE_PEDESTAL, Blocks.ORANGE_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.PURPLE_CONCRETE_PEDESTAL, Blocks.PURPLE_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.RED_CONCRETE_PEDESTAL, Blocks.RED_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.YELLOW_CONCRETE_PEDESTAL, Blocks.YELLOW_CONCRETE);
+        pedestalRecipe(exporter, ModBlocks.WHITE_CONCRETE_PEDESTAL, Blocks.WHITE_CONCRETE);
 
         planksPedestalRecipe(exporter, ModBlocks.OAK_PLANKS_PEDESTAL, Blocks.OAK_PLANKS);
         planksPedestalRecipe(exporter, ModBlocks.BIRCH_PLANKS_PEDESTAL, Blocks.BIRCH_PLANKS);

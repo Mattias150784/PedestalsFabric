@@ -46,7 +46,6 @@ public class PedestalModClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(ModBlockEntities.STONE_BRICKS_PEDESTAL_BE, StoneBricksPedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.STONE_PEDESTAL_BE, StonePedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.COBBLESTONE_PEDESTAL_BE, CobblestonePedestalBlockEntityRenderer::new);
-
         BlockEntityRendererFactories.register(ModBlockEntities.BRICKS_PEDESTAL_BE, BricksPedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.MOSSY_STONE_BRICKS_PEDESTAL_BE, MossyStoneBricksPedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.MOSSY_COBBLESTONE_PEDESTAL_BE, MossyCobblestonePedestalBlockEntityRenderer::new);
@@ -54,7 +53,22 @@ public class PedestalModClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(ModBlockEntities.QUARTZ_PEDESTAL_BE, QuartzPedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.RED_SANDSTONE_PEDESTAL_BE, RedSandstonePedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.SANDSTONE_PEDESTAL_BE, SandstonePedestalBlockEntityRenderer::new);
-
+        BlockEntityRendererFactories.register(ModBlockEntities.BLACK_CONCRETE_PEDESTAL_BE, BlackConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.BLUE_CONCRETE_PEDESTAL_BE, BlueConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.BROWN_CONCRETE_PEDESTAL_BE, BrownConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.CYAN_CONCRETE_PEDESTAL_BE, CyanConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.GRAY_CONCRETE_PEDESTAL_BE, GrayConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.GREEN_CONCRETE_PEDESTAL_BE, GreenConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.LIME_CONCRETE_PEDESTAL_BE, LimeConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.LIGHT_BLUE_CONCRETE_PEDESTAL_BE, LightBlueConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.LIGHT_GRAY_CONCRETE_PEDESTAL_BE, LightGrayConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.MAGENTA_CONCRETE_PEDESTAL_BE, MagentaConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.ORANGE_CONCRETE_PEDESTAL_BE, OrangeConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.PINK_CONCRETE_PEDESTAL_BE, PinkConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.PURPLE_CONCRETE_PEDESTAL_BE, PurpleConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.RED_CONCRETE_PEDESTAL_BE, RedConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.WHITE_CONCRETE_PEDESTAL_BE, WhiteConcretePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.YELLOW_CONCRETE_PEDESTAL_BE, YellowConcretePedestalBlockEntityRenderer::new);
 
         HandledScreens.register(ModScreenHandlers.PEDESTAL_SCREEN_HANDLER, PedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.OAK_LOG_PEDESTAL_SCREEN_HANDLER, OakLogPedestalScreen::new);
@@ -96,5 +110,21 @@ public class PedestalModClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.SMOOTH_STONE_PEDESTAL_SCREEN_HANDLER, SmoothStonePedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.COBBLESTONE_PEDESTAL_SCREEN_HANDLER, CobblestonePedestalScreen::new);
 
+        HandledScreens.register(ModScreenHandlers.BLACK_CONCRETE_PEDESTAL_SCREEN_HANDLER, BlackConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.BLUE_CONCRETE_PEDESTAL_SCREEN_HANDLER, BlueConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.BROWN_CONCRETE_PEDESTAL_SCREEN_HANDLER, BrownConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.CYAN_CONCRETE_PEDESTAL_SCREEN_HANDLER, CyanConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.GRAY_CONCRETE_PEDESTAL_SCREEN_HANDLER, GrayConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.GREEN_CONCRETE_PEDESTAL_SCREEN_HANDLER, GreenConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.LIME_CONCRETE_PEDESTAL_SCREEN_HANDLER, LimeConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.LIGHT_BLUE_CONCRETE_PEDESTAL_SCREEN_HANDLER, LightBlueConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.LIGHT_GRAY_CONCRETE_PEDESTAL_SCREEN_HANDLER, LightGrayConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.MAGENTA_CONCRETE_PEDESTAL_SCREEN_HANDLER, MagentaConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.ORANGE_CONCRETE_PEDESTAL_SCREEN_HANDLER, OrangeConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.PINK_CONCRETE_PEDESTAL_SCREEN_HANDLER, PinkConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.PURPLE_CONCRETE_PEDESTAL_SCREEN_HANDLER, PurpleConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.RED_CONCRETE_PEDESTAL_SCREEN_HANDLER, RedConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.WHITE_CONCRETE_PEDESTAL_SCREEN_HANDLER, WhiteConcretePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.YELLOW_CONCRETE_PEDESTAL_SCREEN_HANDLER, YellowConcretePedestalScreen::new);
     }
 }

@@ -165,6 +165,70 @@ public class ModBlockEntities {
     public static final BlockEntityType<SandstonePedestalBlockEntity> SANDSTONE_PEDESTAL_BE =
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "sandstone_pedestal_be"),
                     BlockEntityType.Builder.create(SandstonePedestalBlockEntity::new, ModBlocks.SANDSTONE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<BlueConcretePedestalBlockEntity> BLUE_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "blue_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(BlueConcretePedestalBlockEntity::new, ModBlocks.BLUE_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<BrownConcretePedestalBlockEntity> BROWN_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "brown_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(BrownConcretePedestalBlockEntity::new, ModBlocks.BROWN_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<CyanConcretePedestalBlockEntity> CYAN_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "cyan_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(CyanConcretePedestalBlockEntity::new, ModBlocks.CYAN_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<LimeConcretePedestalBlockEntity> LIME_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "lime_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(LimeConcretePedestalBlockEntity::new, ModBlocks.LIME_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<GrayConcretePedestalBlockEntity> GRAY_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "gray_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(GrayConcretePedestalBlockEntity::new, ModBlocks.GRAY_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<LightGrayConcretePedestalBlockEntity> LIGHT_GRAY_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "light_gray_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(LightGrayConcretePedestalBlockEntity::new, ModBlocks.LIGHT_GRAY_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<LightBlueConcretePedestalBlockEntity> LIGHT_BLUE_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "light_blue_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(LightBlueConcretePedestalBlockEntity::new, ModBlocks.LIGHT_BLUE_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<GreenConcretePedestalBlockEntity> GREEN_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "green_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(GreenConcretePedestalBlockEntity::new, ModBlocks.GREEN_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<MagentaConcretePedestalBlockEntity> MAGENTA_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "magenta_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(MagentaConcretePedestalBlockEntity::new, ModBlocks.MAGENTA_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<OrangeConcretePedestalBlockEntity> ORANGE_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "orange_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(OrangeConcretePedestalBlockEntity::new, ModBlocks.ORANGE_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<PinkConcretePedestalBlockEntity> PINK_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "pink_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(PinkConcretePedestalBlockEntity::new, ModBlocks.PINK_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<PurpleConcretePedestalBlockEntity> PURPLE_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "purple_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(PurpleConcretePedestalBlockEntity::new, ModBlocks.PURPLE_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<RedConcretePedestalBlockEntity> RED_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "red_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(RedConcretePedestalBlockEntity::new, ModBlocks.RED_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<WhiteConcretePedestalBlockEntity> WHITE_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "white_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(WhiteConcretePedestalBlockEntity::new, ModBlocks.WHITE_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<YellowConcretePedestalBlockEntity> YELLOW_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "yellow_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(YellowConcretePedestalBlockEntity::new, ModBlocks.YELLOW_CONCRETE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<BlackConcretePedestalBlockEntity> BLACK_CONCRETE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "black_concrete_pedestal_be"),
+                    BlockEntityType.Builder.create(BlackConcretePedestalBlockEntity::new, ModBlocks.BLACK_CONCRETE_PEDESTAL).build(null));
     public static void registerBlockEntities() {
         Pedestals.LOGGER.info("Registering Block Entities for " + Pedestals.MOD_ID);
     }

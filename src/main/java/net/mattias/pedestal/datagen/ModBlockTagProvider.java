@@ -41,7 +41,23 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.SANDSTONE_PEDESTAL,
                         ModBlocks.BRICKS_PEDESTAL,
                         ModBlocks.MOSSY_COBBLESTONE_PEDESTAL,
-                        ModBlocks.MOSSY_STONE_BRICKS_PEDESTAL
+                        ModBlocks.MOSSY_STONE_BRICKS_PEDESTAL,
+                        ModBlocks.BLACK_CONCRETE_PEDESTAL,
+                        ModBlocks.BLUE_CONCRETE_PEDESTAL,
+                        ModBlocks.BROWN_CONCRETE_PEDESTAL,
+                        ModBlocks.CYAN_CONCRETE_PEDESTAL,
+                        ModBlocks.GRAY_CONCRETE_PEDESTAL,
+                        ModBlocks.GREEN_CONCRETE_PEDESTAL,
+                        ModBlocks.LIGHT_BLUE_CONCRETE_PEDESTAL,
+                        ModBlocks.LIGHT_GRAY_CONCRETE_PEDESTAL,
+                        ModBlocks.LIME_CONCRETE_PEDESTAL,
+                        ModBlocks.MAGENTA_CONCRETE_PEDESTAL,
+                        ModBlocks.ORANGE_CONCRETE_PEDESTAL,
+                        ModBlocks.PURPLE_CONCRETE_PEDESTAL,
+                        ModBlocks.RED_CONCRETE_PEDESTAL,
+                        ModBlocks.WHITE_CONCRETE_PEDESTAL,
+                        ModBlocks.YELLOW_CONCRETE_PEDESTAL,
+                        ModBlocks.PINK_CONCRETE_PEDESTAL
                       );
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
@@ -73,8 +89,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OBSIDIAN_PEDESTAL,
                         ModBlocks.CRYING_OBSIDIAN_PEDESTAL);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.PEDESTAL);
+  //      getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+   //             .add(ModBlocks.PEDESTAL);
 
 
 

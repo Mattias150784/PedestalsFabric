@@ -129,6 +129,58 @@ public class ModBlocks {
 
     public static final Block SANDSTONE_PEDESTAL = registerBlock("sandstone_pedestal",
             new SandstonePedestalBlock(AbstractBlock.Settings.copy(Blocks.SANDSTONE).nonOpaque()));
+
+    public static final Block BLACK_CONCRETE_PEDESTAL = registerBlock("black_concrete_pedestal",
+            new BlackConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CONCRETE).nonOpaque()));
+
+    public static final Block BLUE_CONCRETE_PEDESTAL = registerBlock("blue_concrete_pedestal",
+            new BlueConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.BLUE_CONCRETE).nonOpaque()));
+
+    public static final Block BROWN_CONCRETE_PEDESTAL = registerBlock("brown_concrete_pedestal",
+            new BrownConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.BROWN_CONCRETE).nonOpaque()));
+
+    public static final Block CYAN_CONCRETE_PEDESTAL = registerBlock("cyan_concrete_pedestal",
+            new CyanConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.CYAN_CONCRETE).nonOpaque()));
+
+    public static final Block LIME_CONCRETE_PEDESTAL = registerBlock("lime_concrete_pedestal",
+            new LimeConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.LIME_CONCRETE).nonOpaque()));
+
+    public static final Block LIGHT_GRAY_CONCRETE_PEDESTAL = registerBlock("light_gray_concrete_pedestal",
+            new LightGrayConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.LIGHT_GRAY_CONCRETE).nonOpaque()));
+
+    public static final Block LIGHT_BLUE_CONCRETE_PEDESTAL = registerBlock("light_blue_concrete_pedestal",
+            new LightBlueConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.LIGHT_BLUE_CONCRETE).nonOpaque()));
+
+    public static final Block GRAY_CONCRETE_PEDESTAL = registerBlock("gray_concrete_pedestal",
+            new GrayConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.GRAY_CONCRETE).nonOpaque()));
+
+    public static final Block GREEN_CONCRETE_PEDESTAL = registerBlock("green_concrete_pedestal",
+            new GreenConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.GREEN_CONCRETE).nonOpaque()));
+
+    public static final Block MAGENTA_CONCRETE_PEDESTAL = registerBlock("magenta_concrete_pedestal",
+            new MagentaConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.MAGENTA_CONCRETE).nonOpaque()));
+
+    public static final Block ORANGE_CONCRETE_PEDESTAL = registerBlock("orange_concrete_pedestal",
+            new OrangeConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.ORANGE_CONCRETE).nonOpaque()));
+
+    public static final Block PINK_CONCRETE_PEDESTAL = registerBlock("pink_concrete_pedestal",
+            new PinkConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.PINK_CONCRETE).nonOpaque()));
+
+    public static final Block PURPLE_CONCRETE_PEDESTAL = registerBlock("purple_concrete_pedestal",
+            new PurpleConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.PURPLE_CONCRETE).nonOpaque()));
+
+    public static final Block RED_CONCRETE_PEDESTAL = registerBlock("red_concrete_pedestal",
+            new RedConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.RED_CONCRETE).nonOpaque()));
+
+    public static final Block WHITE_CONCRETE_PEDESTAL = registerBlock("white_concrete_pedestal",
+            new WhiteConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.WHITE_CONCRETE).nonOpaque()));
+
+    public static final Block YELLOW_CONCRETE_PEDESTAL = registerBlock("yellow_concrete_pedestal",
+            new YellowConcretePedestalBlock(AbstractBlock.Settings.copy(Blocks.YELLOW_CONCRETE).nonOpaque()));
+    
+    
+    
+    
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(Pedestals.MOD_ID, name), block);

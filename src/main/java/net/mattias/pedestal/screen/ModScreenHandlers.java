@@ -166,6 +166,70 @@ public class ModScreenHandlers {
             Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "red_sandstone_pedestal_screen_handler"),
                     new ExtendedScreenHandlerType<>(RedSandstonePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
 
+    public static final ScreenHandlerType<BlackConcretePedestalScreenHandler> BLACK_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "black_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(BlackConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<BlueConcretePedestalScreenHandler> BLUE_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "blue_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(BlueConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<BrownConcretePedestalScreenHandler> BROWN_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "brown_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(BrownConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<CyanConcretePedestalScreenHandler> CYAN_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "cyan_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(CyanConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<GrayConcretePedestalScreenHandler> GRAY_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "gray_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(GrayConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<GreenConcretePedestalScreenHandler> GREEN_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "green_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(GreenConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<LightGrayConcretePedestalScreenHandler> LIGHT_GRAY_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "light_gray_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(LightGrayConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<LightBlueConcretePedestalScreenHandler> LIGHT_BLUE_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "light_blue_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(LightBlueConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<LimeConcretePedestalScreenHandler> LIME_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "lime_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(LimeConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<MagentaConcretePedestalScreenHandler> MAGENTA_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "magenta_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(MagentaConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<PinkConcretePedestalScreenHandler> PINK_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "pink_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(PinkConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<PurpleConcretePedestalScreenHandler> PURPLE_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "purple_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(PurpleConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<RedConcretePedestalScreenHandler> RED_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "red_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(RedConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<OrangeConcretePedestalScreenHandler> ORANGE_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "orange_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(OrangeConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<WhiteConcretePedestalScreenHandler> WHITE_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "white_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(WhiteConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<YellowConcretePedestalScreenHandler> YELLOW_CONCRETE_PEDESTAL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Pedestals.MOD_ID, "yellow_concrete_pedestal_screen_handler"),
+                    new ExtendedScreenHandlerType<>(YellowConcretePedestalScreenHandler::new, BlockPos.PACKET_CODEC));
+    
     public static void registerScreenHandlers() {
         Pedestals.LOGGER.info("Registering Screen Handlers for " + Pedestals.MOD_ID);
     }

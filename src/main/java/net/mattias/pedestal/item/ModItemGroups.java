@@ -54,6 +54,22 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RED_SANDSTONE_PEDESTAL);
                         entries.add(ModBlocks.SANDSTONE_PEDESTAL);
                         entries.add(ModBlocks.BRICKS_PEDESTAL);
+                        entries.add(ModBlocks.BLACK_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.BLUE_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.BROWN_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.CYAN_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.GRAY_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.GREEN_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.LIME_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.MAGENTA_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.ORANGE_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.PINK_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.PURPLE_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.RED_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.WHITE_CONCRETE_PEDESTAL);
+                        entries.add(ModBlocks.YELLOW_CONCRETE_PEDESTAL);
 
 
 
