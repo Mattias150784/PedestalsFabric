@@ -75,6 +75,10 @@ public class PedestalModClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(ModBlockEntities.RED_NETHER_BRICKS_PEDESTAL_BE, RedNetherBricksPedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.SOUL_SAND_PEDESTAL_BE, SoulSandPedestalBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.SOUL_SOIL_PEDESTAL_BE, SoulSoilPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.END_STONE_BRICKS_PEDESTAL_BE, EndStoneBricksPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.END_STONE_PEDESTAL_BE, EndStonePedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.PURPUR_BLOCK_PEDESTAL_BE, PurpurBlockPedestalBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.PURPUR_PILLAR_PEDESTAL_BE, PurpurPillarPedestalBlockEntityRenderer::new);
 
         HandledScreens.register(ModScreenHandlers.PEDESTAL_SCREEN_HANDLER, PedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.OAK_LOG_PEDESTAL_SCREEN_HANDLER, OakLogPedestalScreen::new);
@@ -137,5 +141,12 @@ public class PedestalModClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.RED_CONCRETE_PEDESTAL_SCREEN_HANDLER, RedConcretePedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.WHITE_CONCRETE_PEDESTAL_SCREEN_HANDLER, WhiteConcretePedestalScreen::new);
         HandledScreens.register(ModScreenHandlers.YELLOW_CONCRETE_PEDESTAL_SCREEN_HANDLER, YellowConcretePedestalScreen::new);
+
+        HandledScreens.register(ModScreenHandlers.END_STONE_BRICKS_PEDESTAL_SCREEN_HANDLER, EndStoneBricksPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.END_STONE_PEDESTAL_SCREEN_HANDLER, EndStonePedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.PURPUR_BLOCK_PEDESTAL_SCREEN_HANDLER, PurpurBlockPedestalScreen::new);
+        HandledScreens.register(ModScreenHandlers.PURPUR_PILLAR_PEDESTAL_SCREEN_HANDLER, PurpurPillarPedestalScreen::new);
     }
+
+
 }

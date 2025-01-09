@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "P": {
-      "item": "minecraft:soul_sand"
+      "item": "minecraft:purpur_pillar"
     }
   },
   "pattern": [
@@ -13,6 +13,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "pedestals:soul_and_pedestal"
+    "id": "pedestals:purpur_pillar_pedestal"
   }
 }

@@ -195,6 +195,18 @@ public class ModBlocks {
 
     public static final Block NETHER_BRICKS_PEDESTAL = registerBlock("nether_bricks_pedestal",
             new NetherBricksPedestalBlock(AbstractBlock.Settings.copy(Blocks.NETHER_BRICKS).nonOpaque()));
+
+    public static final Block END_STONE_BRICKS_PEDESTAL = registerBlock("end_stone_bricks_pedestal",
+            new EndStoneBricksPedestalBlock(AbstractBlock.Settings.copy(Blocks.END_STONE_BRICKS).nonOpaque()));
+
+    public static final Block END_STONE_PEDESTAL = registerBlock("end_stone_pedestal",
+            new EndStonePedestalBlock(AbstractBlock.Settings.copy(Blocks.END_STONE).nonOpaque()));
+
+    public static final Block PURPUR_PILLAR_PEDESTAL = registerBlock("purpur_pillar_pedestal",
+            new PurpurPillarPedestalBlock(AbstractBlock.Settings.copy(Blocks.PURPUR_PILLAR).nonOpaque()));
+
+    public static final Block PURPUR_BLOCK_PEDESTAL = registerBlock("purpur_block_pedestal",
+            new PurpurBlockPedestalBlock(AbstractBlock.Settings.copy(Blocks.PURPUR_BLOCK).nonOpaque()));
     
     
     

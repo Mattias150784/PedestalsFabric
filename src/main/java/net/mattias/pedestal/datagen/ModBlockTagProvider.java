@@ -61,7 +61,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.BLACKSTONE_PEDESTAL,
                         ModBlocks.NETHER_BRICKS_PEDESTAL,
                         ModBlocks.RED_NETHER_BRICKS_PEDESTAL,
-                        ModBlocks.NETHERRACK_PEDESTAL
+                        ModBlocks.NETHERRACK_PEDESTAL,
+                        ModBlocks.PURPUR_PILLAR_PEDESTAL,
+                        ModBlocks.PURPUR_BLOCK_PEDESTAL,
+                        ModBlocks.END_STONE_BRICKS_PEDESTAL,
+                        ModBlocks.END_STONE_PEDESTAL
                       );
 
 

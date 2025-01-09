@@ -253,11 +253,25 @@ public class ModBlockEntities {
     public static final BlockEntityType<RedNetherBricksPedestalBlockEntity> RED_NETHER_BRICKS_PEDESTAL_BE =
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "red_nether_bricks_pedestal_be"),
                     BlockEntityType.Builder.create(RedNetherBricksPedestalBlockEntity::new, ModBlocks.RED_NETHER_BRICKS_PEDESTAL).build(null));
-    
-   
-   
-   
-   
+
+    public static final BlockEntityType<EndStoneBricksPedestalBlockEntity> END_STONE_BRICKS_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "end_stone_bricks_pedestal_be"),
+                    BlockEntityType.Builder.create(EndStoneBricksPedestalBlockEntity::new, ModBlocks.END_STONE_BRICKS_PEDESTAL).build(null));
+
+    public static final BlockEntityType<EndStonePedestalBlockEntity> END_STONE_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "end_stone_pedestal_be"),
+                    BlockEntityType.Builder.create(EndStonePedestalBlockEntity::new, ModBlocks.END_STONE_PEDESTAL).build(null));
+
+    public static final BlockEntityType<PurpurPillarPedestalBlockEntity> PURPUR_PILLAR_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "purpur_pillar_pedestal_be"),
+                    BlockEntityType.Builder.create(PurpurPillarPedestalBlockEntity::new, ModBlocks.PURPUR_PILLAR_PEDESTAL).build(null));
+
+    public static final BlockEntityType<PurpurBlockPedestalBlockEntity> PURPUR_BLOCK_PEDESTAL_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Pedestals.MOD_ID, "purpur_block_pedestal_be"),
+                    BlockEntityType.Builder.create(PurpurBlockPedestalBlockEntity::new, ModBlocks.PURPUR_BLOCK_PEDESTAL).build(null));
+
+
+
     public static void registerBlockEntities() {
         Pedestals.LOGGER.info("Registering Block Entities for " + Pedestals.MOD_ID);
     }

@@ -86,6 +86,10 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.NETHERRACK_PEDESTAL);
         addDrop(ModBlocks.RED_NETHER_BRICKS_PEDESTAL);
         addDrop(ModBlocks.NETHER_BRICKS_PEDESTAL);
+        addDrop(ModBlocks.PURPUR_PILLAR_PEDESTAL);
+        addDrop(ModBlocks.PURPUR_BLOCK_PEDESTAL);
+        addDrop(ModBlocks.END_STONE_BRICKS_PEDESTAL);
+        addDrop(ModBlocks.END_STONE_PEDESTAL);
     }
 
 

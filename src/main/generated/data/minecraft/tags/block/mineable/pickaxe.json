@@ -41,6 +41,10 @@
     "pedestals:blackstone_pedestal",
     "pedestals:nether_bricks_pedestal",
     "pedestals:red_nether_bricks_pedestal",
-    "pedestals:netherrack_pedestal"
+    "pedestals:netherrack_pedestal",
+    "pedestals:purpur_pillar_pedestal",
+    "pedestals:purpur_block_pedestal",
+    "pedestals:end_stone_bricks_pedestal",
+    "pedestals:end_stone_pedestal"
   ]
 }

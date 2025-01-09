@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_soul_sand": {
+    "has_end_stone_bricks": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:soul_sand"
+            "items": "minecraft:end_stone_bricks"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "pedestals:block.pedestals.soul_and_pedestal_pedestal"
+        "recipe": "pedestals:block.pedestals.end_stone_bricks_pedestal_pedestal"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_soul_sand"
+      "has_end_stone_bricks"
     ]
   ],
   "rewards": {
     "recipes": [
-      "pedestals:block.pedestals.soul_and_pedestal_pedestal"
+      "pedestals:block.pedestals.end_stone_bricks_pedestal_pedestal"
     ]
   }
 }

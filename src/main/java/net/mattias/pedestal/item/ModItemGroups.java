@@ -76,6 +76,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.NETHER_BRICKS_PEDESTAL);
                         entries.add(ModBlocks.SOUL_SAND_PEDESTAL);
                         entries.add(ModBlocks.SOUL_SOIL_PEDESTAL);
+                        entries.add(ModBlocks.END_STONE_BRICKS_PEDESTAL);
+                        entries.add(ModBlocks.END_STONE_PEDESTAL);
+                        entries.add(ModBlocks.PURPUR_PILLAR_PEDESTAL);
+                        entries.add(ModBlocks.PURPUR_BLOCK_PEDESTAL);
 
 
 
