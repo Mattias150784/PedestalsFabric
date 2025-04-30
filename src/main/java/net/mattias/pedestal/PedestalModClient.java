@@ -2,151 +2,20 @@ package net.mattias.pedestal;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.mattias.pedestal.blocks.entity.ModBlockEntities;
-import net.mattias.pedestal.blocks.entity.custom.StoneBricksPedestalBlockEntity;
 import net.mattias.pedestal.blocks.entity.renderer.*;
-import net.mattias.pedestal.screen.ModScreenHandlers;
 import net.mattias.pedestal.screen.custom.*;
+import net.mattias.pedestal.util.PedestalVariant;
+import net.mattias.pedestal.util.PedestalVariants;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 
 public class PedestalModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-
-
         BlockEntityRendererFactories.register(ModBlockEntities.PEDESTAL_BE, PedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.OAK_LOG_PEDESTAL_BE, OakLogPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.BIRCH_LOG_PEDESTAL_BE, BirchLogPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.SPRUCE_LOG_PEDESTAL_BE, SpruceLogPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.DARK_OAK_LOG_PEDESTAL_BE, DarkOakLogPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.CHERRY_LOG_PEDESTAL_BE, CherryLogPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.JUNGLE_LOG_PEDESTAL_BE, JungleLogPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.MANGROVE_LOG_PEDESTAL_BE, MangroveLogPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.ACACIA_LOG_PEDESTAL_BE, AcaciaLogPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.OAK_PLANKS_PEDESTAL_BE, OakPlanksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.BIRCH_PLANKS_PEDESTAL_BE, BirchPlanksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.SPRUCE_PLANKS_PEDESTAL_BE, SprucePlanksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.DARK_OAK_PLANKS_PEDESTAL_BE, DarkOakPlanksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.CHERRY_PLANKS_PEDESTAL_BE, CherryPlanksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.JUNGLE_PLANKS_PEDESTAL_BE, JunglePlanksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.MANGROVE_PLANKS_PEDESTAL_BE, MangrovePlanksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.ACACIA_PLANKS_PEDESTAL_BE, AcaciaPlanksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.BAMBOO_PLANKS_PEDESTAL_BE, BambooPlanksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.POLISHED_DEEPSLATE_PEDESTAL_BE, PolishedDeepslatePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.CRYING_OBSIDIAN_PEDESTAL_BE, CryingObsidianPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.OBSIDIAN_PEDESTAL_BE, ObsidianPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.POLISHED_ANDESITE_PEDESTAL_BE, PolishedAndesitePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.POLISHED_DIORITE_PEDESTAL_BE, PolishedDioritePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.POLISHED_GRANITE_PEDESTAL_BE, PolishedGranitePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.ANDESITE_PEDESTAL_BE, AndesitePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.DIORITE_PEDESTAL_BE, DioritePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.GRANITE_PEDESTAL_BE, GranitePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.POLISHED_TUFF_PEDESTAL_BE, PolishedTuffPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.SMOOTH_STONE_PEDESTAL_BE, SmoothStonePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.STONE_BRICKS_PEDESTAL_BE, StoneBricksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.STONE_PEDESTAL_BE, StonePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.COBBLESTONE_PEDESTAL_BE, CobblestonePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.BRICKS_PEDESTAL_BE, BricksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.MOSSY_STONE_BRICKS_PEDESTAL_BE, MossyStoneBricksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.MOSSY_COBBLESTONE_PEDESTAL_BE, MossyCobblestonePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.QUARTZ_PILLAR_PEDESTAL_BE, QuartzPillarPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.QUARTZ_PEDESTAL_BE, QuartzPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.RED_SANDSTONE_PEDESTAL_BE, RedSandstonePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.SANDSTONE_PEDESTAL_BE, SandstonePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.BLACK_CONCRETE_PEDESTAL_BE, BlackConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.BLUE_CONCRETE_PEDESTAL_BE, BlueConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.BROWN_CONCRETE_PEDESTAL_BE, BrownConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.CYAN_CONCRETE_PEDESTAL_BE, CyanConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.GRAY_CONCRETE_PEDESTAL_BE, GrayConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.GREEN_CONCRETE_PEDESTAL_BE, GreenConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.LIME_CONCRETE_PEDESTAL_BE, LimeConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.LIGHT_BLUE_CONCRETE_PEDESTAL_BE, LightBlueConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.LIGHT_GRAY_CONCRETE_PEDESTAL_BE, LightGrayConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.MAGENTA_CONCRETE_PEDESTAL_BE, MagentaConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.ORANGE_CONCRETE_PEDESTAL_BE, OrangeConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.PINK_CONCRETE_PEDESTAL_BE, PinkConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.PURPLE_CONCRETE_PEDESTAL_BE, PurpleConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.RED_CONCRETE_PEDESTAL_BE, RedConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.WHITE_CONCRETE_PEDESTAL_BE, WhiteConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.YELLOW_CONCRETE_PEDESTAL_BE, YellowConcretePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.BLACKSTONE_PEDESTAL_BE, BlackstonePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.NETHERRACK_PEDESTAL_BE, NetherrackPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.NETHER_BRICKS_PEDESTAL_BE, NetherBricksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.RED_NETHER_BRICKS_PEDESTAL_BE, RedNetherBricksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.SOUL_SAND_PEDESTAL_BE, SoulSandPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.SOUL_SOIL_PEDESTAL_BE, SoulSoilPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.END_STONE_BRICKS_PEDESTAL_BE, EndStoneBricksPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.END_STONE_PEDESTAL_BE, EndStonePedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.PURPUR_BLOCK_PEDESTAL_BE, PurpurBlockPedestalBlockEntityRenderer::new);
-        BlockEntityRendererFactories.register(ModBlockEntities.PURPUR_PILLAR_PEDESTAL_BE, PurpurPillarPedestalBlockEntityRenderer::new);
 
-        HandledScreens.register(ModScreenHandlers.PEDESTAL_SCREEN_HANDLER, PedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.OAK_LOG_PEDESTAL_SCREEN_HANDLER, OakLogPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.BIRCH_LOG_PEDESTAL_SCREEN_HANDLER, BirchLogPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.SPRUCE_LOG_PEDESTAL_SCREEN_HANDLER, SpruceLogPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.DARK_OAK_LOG_PEDESTAL_SCREEN_HANDLER, DarkOakLogPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.CHERRY_LOG_PEDESTAL_SCREEN_HANDLER, CherryLogPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.JUNGLE_LOG_PEDESTAL_SCREEN_HANDLER, JungleLogPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.MANGROVE_LOG_PEDESTAL_SCREEN_HANDLER, MangroveLogPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.ACACIA_LOG_PEDESTAL_SCREEN_HANDLER, AcaciaLogPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.OAK_PLANKS_PEDESTAL_SCREEN_HANDLER, OakPlanksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.BIRCH_PLANKS_PEDESTAL_SCREEN_HANDLER, BirchPlanksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.SPRUCE_PLANKS_PEDESTAL_SCREEN_HANDLER, SprucePlanksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.DARK_OAK_PLANKS_PEDESTAL_SCREEN_HANDLER, DarkOakPlanksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.CHERRY_PLANKS_PEDESTAL_SCREEN_HANDLER, CherryPlanksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.JUNGLE_PLANKS_PEDESTAL_SCREEN_HANDLER, JunglePlanksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.MANGROVE_PLANKS_PEDESTAL_SCREEN_HANDLER, MangrovePlanksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.ACACIA_PLANKS_PEDESTAL_SCREEN_HANDLER, AcaciaPlanksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.BAMBOO_PLANKS_PEDESTAL_SCREEN_HANDLER, BambooPlanksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.POLISHED_DEEPSLATE_PEDESTAL_SCREEN_HANDLER, PolishedDeepslatePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.CRYING_OBSIDIAN_PEDESTAL_SCREEN_HANDLER, CryingObsidianPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.OBSIDIAN_PEDESTAL_SCREEN_HANDLER, ObsidianPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.BRICKS_PEDESTAL_SCREEN_HANDLER, BricksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.MOSSY_STONE_BRICKS_PEDESTAL_SCREEN_HANDLER, MossyStoneBricksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.MOSSY_COBBLESTONE_PEDESTAL_SCREEN_HANDLER, MossyCobblestonePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.RED_SANDSTONE_PEDESTAL_SCREEN_HANDLER, RedSandstonePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.SANDSTONE_PEDESTAL_SCREEN_HANDLER, SandstonePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.QUARTZ_PILLAR_PEDESTAL_SCREEN_HANDLER, QuartzPillarPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.QUARTZ_PEDESTAL_SCREEN_HANDLER, QuartzPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.POLISHED_DIORITE_PEDESTAL_SCREEN_HANDLER, PolishedDioritePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.POLISHED_ANDESITE_PEDESTAL_SCREEN_HANDLER, PolishedAndesitePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.POLISHED_GRANITE_PEDESTAL_SCREEN_HANDLER, PolishedGranitePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.ANDESITE_PEDESTAL_SCREEN_HANDLER, AndesitePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.GRANITE_PEDESTAL_SCREEN_HANDLER, GranitePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.DIORITE_PEDESTAL_SCREEN_HANDLER, DioritePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.POLISHED_TUFF_PEDESTAL_SCREEN_HANDLER, PolishedTuffPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.STONE_PEDESTAL_SCREEN_HANDLER, StonePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.STONE_BRICKS_PEDESTAL_SCREEN_HANDLER, StoneBricksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.SMOOTH_STONE_PEDESTAL_SCREEN_HANDLER, SmoothStonePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.COBBLESTONE_PEDESTAL_SCREEN_HANDLER, CobblestonePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.BLACKSTONE_PEDESTAL_SCREEN_HANDLER, BlackstonePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.NETHERRACK_PEDESTAL_SCREEN_HANDLER, NetherrackPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.RED_NETHER_BRICKS_PEDESTAL_SCREEN_HANDLER, RedNetherBricksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.NETHER_BRICKS_PEDESTAL_SCREEN_HANDLER, NetherBricksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.SOUL_SAND_PEDESTAL_SCREEN_HANDLER, SoulSandPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.SOUL_SOIL_PEDESTAL_SCREEN_HANDLER, SoulSoilPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.BLACK_CONCRETE_PEDESTAL_SCREEN_HANDLER, BlackConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.BLUE_CONCRETE_PEDESTAL_SCREEN_HANDLER, BlueConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.BROWN_CONCRETE_PEDESTAL_SCREEN_HANDLER, BrownConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.CYAN_CONCRETE_PEDESTAL_SCREEN_HANDLER, CyanConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.GRAY_CONCRETE_PEDESTAL_SCREEN_HANDLER, GrayConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.GREEN_CONCRETE_PEDESTAL_SCREEN_HANDLER, GreenConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.LIME_CONCRETE_PEDESTAL_SCREEN_HANDLER, LimeConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.LIGHT_BLUE_CONCRETE_PEDESTAL_SCREEN_HANDLER, LightBlueConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.LIGHT_GRAY_CONCRETE_PEDESTAL_SCREEN_HANDLER, LightGrayConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.MAGENTA_CONCRETE_PEDESTAL_SCREEN_HANDLER, MagentaConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.ORANGE_CONCRETE_PEDESTAL_SCREEN_HANDLER, OrangeConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.PINK_CONCRETE_PEDESTAL_SCREEN_HANDLER, PinkConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.PURPLE_CONCRETE_PEDESTAL_SCREEN_HANDLER, PurpleConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.RED_CONCRETE_PEDESTAL_SCREEN_HANDLER, RedConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.WHITE_CONCRETE_PEDESTAL_SCREEN_HANDLER, WhiteConcretePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.YELLOW_CONCRETE_PEDESTAL_SCREEN_HANDLER, YellowConcretePedestalScreen::new);
-
-        HandledScreens.register(ModScreenHandlers.END_STONE_BRICKS_PEDESTAL_SCREEN_HANDLER, EndStoneBricksPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.END_STONE_PEDESTAL_SCREEN_HANDLER, EndStonePedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.PURPUR_BLOCK_PEDESTAL_SCREEN_HANDLER, PurpurBlockPedestalScreen::new);
-        HandledScreens.register(ModScreenHandlers.PURPUR_PILLAR_PEDESTAL_SCREEN_HANDLER, PurpurPillarPedestalScreen::new);
+        for (PedestalVariant pedestalVariant : PedestalVariants.VARIANTS) {
+            HandledScreens.register(PedestalVariants.SCREEN_HANDLER_MAP.get(pedestalVariant), PedestalScreen::new);
+        }
     }
-
-
 }
