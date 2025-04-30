@@ -1,15 +1,12 @@
 package net.mattias.pedestal.datagen;
 
-import com.mojang.datafixers.types.templates.Tag;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.mattias.pedestal.blocks.ModBlocks;
-import net.minecraft.block.Blocks;
+import net.mattias.pedestal.util.PedestalVariant;
+import net.mattias.pedestal.util.PedestalVariants;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.TagKey;
 
-import javax.swing.text.html.HTML;
 import java.util.concurrent.CompletableFuture;
 
 public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
@@ -19,95 +16,87 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.PEDESTAL,
-                        ModBlocks.POLISHED_DEEPSLATE_PEDESTAL,
-                        ModBlocks.CRYING_OBSIDIAN_PEDESTAL,
-                        ModBlocks.OBSIDIAN_PEDESTAL,
-                        ModBlocks.POLISHED_ANDESITE_PEDESTAL,
-                        ModBlocks.POLISHED_DIORITE_PEDESTAL,
-                        ModBlocks.POLISHED_GRANITE_PEDESTAL,
-                        ModBlocks.POLISHED_TUFF_PEDESTAL,
-                        ModBlocks.ANDESITE_PEDESTAL,
-                        ModBlocks.DIORITE_PEDESTAL,
-                        ModBlocks.GRANITE_PEDESTAL,
-                        ModBlocks.SMOOTH_STONE_PEDESTAL,
-                        ModBlocks.STONE_BRICKS_PEDESTAL,
-                        ModBlocks.STONE_PEDESTAL,
-                        ModBlocks.COBBLESTONE_PEDESTAL,
-                        ModBlocks.QUARTZ_PEDESTAL,
-                        ModBlocks.QUARTZ_PILLAR_PEDESTAL,
-                        ModBlocks.RED_SANDSTONE_PEDESTAL,
-                        ModBlocks.SANDSTONE_PEDESTAL,
-                        ModBlocks.BRICKS_PEDESTAL,
-                        ModBlocks.MOSSY_COBBLESTONE_PEDESTAL,
-                        ModBlocks.MOSSY_STONE_BRICKS_PEDESTAL,
-                        ModBlocks.BLACK_CONCRETE_PEDESTAL,
-                        ModBlocks.BLUE_CONCRETE_PEDESTAL,
-                        ModBlocks.BROWN_CONCRETE_PEDESTAL,
-                        ModBlocks.CYAN_CONCRETE_PEDESTAL,
-                        ModBlocks.GRAY_CONCRETE_PEDESTAL,
-                        ModBlocks.GREEN_CONCRETE_PEDESTAL,
-                        ModBlocks.LIGHT_BLUE_CONCRETE_PEDESTAL,
-                        ModBlocks.LIGHT_GRAY_CONCRETE_PEDESTAL,
-                        ModBlocks.LIME_CONCRETE_PEDESTAL,
-                        ModBlocks.MAGENTA_CONCRETE_PEDESTAL,
-                        ModBlocks.ORANGE_CONCRETE_PEDESTAL,
-                        ModBlocks.PURPLE_CONCRETE_PEDESTAL,
-                        ModBlocks.RED_CONCRETE_PEDESTAL,
-                        ModBlocks.WHITE_CONCRETE_PEDESTAL,
-                        ModBlocks.YELLOW_CONCRETE_PEDESTAL,
-                        ModBlocks.PINK_CONCRETE_PEDESTAL,
-                        ModBlocks.BLACKSTONE_PEDESTAL,
-                        ModBlocks.NETHER_BRICKS_PEDESTAL,
-                        ModBlocks.RED_NETHER_BRICKS_PEDESTAL,
-                        ModBlocks.NETHERRACK_PEDESTAL,
-                        ModBlocks.PURPUR_PILLAR_PEDESTAL,
-                        ModBlocks.PURPUR_BLOCK_PEDESTAL,
-                        ModBlocks.END_STONE_BRICKS_PEDESTAL,
-                        ModBlocks.END_STONE_PEDESTAL
-                      );
-
-
-        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
-            .add(ModBlocks.SOUL_SAND_PEDESTAL,
-                 ModBlocks.SOUL_SOIL_PEDESTAL
-
-                    );
-        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
-                .add(ModBlocks.OAK_LOG_PEDESTAL,
-                        ModBlocks.BIRCH_LOG_PEDESTAL,
-                        ModBlocks.DARK_OAK_LOG_PEDESTAL,
-                        ModBlocks.SPRUCE_LOG_PEDESTAL,
-                        ModBlocks.CHERRY_LOG_PEDESTAL,
-                        ModBlocks.ACACIA_LOG_PEDESTAL,
-                        ModBlocks.JUNGLE_LOG_PEDESTAL,
-                        ModBlocks.MANGROVE_LOG_PEDESTAL,
-                        ModBlocks.OAK_PLANKS_PEDESTAL,
-                        ModBlocks.BIRCH_PLANKS_PEDESTAL,
-                        ModBlocks.DARK_OAK_PLANKS_PEDESTAL,
-                        ModBlocks.SPRUCE_PLANKS_PEDESTAL,
-                        ModBlocks.CHERRY_PLANKS_PEDESTAL,
-                        ModBlocks.ACACIA_PLANKS_PEDESTAL,
-                        ModBlocks.JUNGLE_PLANKS_PEDESTAL,
-                        ModBlocks.MANGROVE_PLANKS_PEDESTAL,
-                        ModBlocks.BAMBOO_PLANKS_PEDESTAL
-
-                );
+        for(PedestalVariant pedestalVariant : PedestalVariants.VARIANTS) {
+            switch (pedestalVariant.registryName()) {
+                case "crying_obsidian_pedestal":
+                case "obsidian_pedestal":
+                    getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(PedestalVariants.BLOCK_MAP.get(pedestalVariant));
+                case "polished_deepslate_pedestal":
+                case "pedestal":
+                case "polished_andesite_pedestal":
+                case "polished_diorite_pedestal":
+                case "polished_granite_pedestal":
+                case "polished_tuff_pedestal":
+                case "andesite_pedestal":
+                case "diorite_pedestal":
+                case "granite_pedestal":
+                case "smooth_stone_pedestal":
+                case "stone_bricks_pedestal":
+                case "stone_pedestal":
+                case "cobblestone_pedestal":
+                case "quartz_pedestal":
+                case "quartz_pillar_pedestal":
+                case "red_sandstone_pedestal":
+                case "sandstone_pedestal":
+                case "bricks_pedestal":
+                case "mossy_cobblestone_pedestal":
+                case "mossy_stone_bricks_pedestal":
+                case "black_concrete_pedestal":
+                case "blue_concrete_pedestal":
+                case "brown_concrete_pedestal":
+                case "cyan_concrete_pedestal":
+                case "gray_concrete_pedestal":
+                case "green_concrete_pedestal":
+                case "light_blue_concrete_pedestal":
+                case "light_gray_concrete_pedestal":
+                case "lime_concrete_pedestal":
+                case "magenta_concrete_pedestal":
+                case "orange_concrete_pedestal":
+                case "purple_concrete_pedestal":
+                case "red_concrete_pedestal":
+                case "white_concrete_pedestal":
+                case "yellow_concrete_pedestal":
+                case "pink_concrete_pedestal":
+                case "blackstone_pedestal":
+                case "nether_bricks_pedestal":
+                case "red_nether_bricks_pedestal":
+                case "netherrack_pedestal":
+                case "purpur_pillar_pedestal":
+                case "purpur_block_pedestal":
+                case "end_stone_bricks_pedestal":
+                case "end_stone_pedestal":
+                    getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(PedestalVariants.BLOCK_MAP.get(pedestalVariant));
+                    break;
+                case "soul_sand_pedestal":
+                case "soul_soil_pedestal":
+                    getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(PedestalVariants.BLOCK_MAP.get(pedestalVariant));
+                    break;
+                case "oak_log_pedestal":
+                case "birch_log_pedestal":
+                case "dark_oak_log_pedestal":
+                case "spruce_log_pedestal":
+                case "cherry_log_pedestal":
+                case "acacia_log_pedestal":
+                case "jungle_log_pedestal":
+                case "mangrove_log_pedestal":
+                case "oak_planks_pedestal":
+                case "birch_planks_pedestal":
+                case "dark_oak_planks_pedestal":
+                case "spruce_planks_pedestal":
+                case "cherry_planks_pedestal":
+                case "acacia_planks_pedestal":
+                case "jungle_planks_pedestal":
+                case "mangrove_planks_pedestal":
+                case "bamboo_planks_pedestal":
+                    getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(PedestalVariants.BLOCK_MAP.get(pedestalVariant));
+                    break;
+            }
+        }
 
 // getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
  //               .add(ModBlocks.POLISHED_DEEPSLATE_PEDESTAL);
 
-
-       getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.OBSIDIAN_PEDESTAL,
-                        ModBlocks.CRYING_OBSIDIAN_PEDESTAL);
-
   //      getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
    //             .add(ModBlocks.PEDESTAL);
-
-
-
-
     }
 }

@@ -1,6 +1,5 @@
 package net.mattias.pedestal.blocks.custom;
 
-import com.mojang.serialization.MapCodec;
 import net.mattias.pedestal.blocks.entity.custom.PedestalBlockEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -9,7 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
-import net.minecraft.util.ItemActionResult;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -21,19 +20,19 @@ import org.jetbrains.annotations.Nullable;
 public class PedestalBlock extends BlockWithEntity implements BlockEntityProvider {
     private static final VoxelShape SHAPE =
             Block.createCuboidShape(2, 0, 2, 14, 13, 14);
-    public static final MapCodec<PedestalBlock> CODEC = PedestalBlock.createCodec(PedestalBlock::new);
+    //public static final MapCodec<PedestalBlock> CODEC = PedestalBlock.createCodec(PedestalBlock::new);
 
     public PedestalBlock(Settings settings) {
         super(settings);
     }
 
-    @Override
+    /*@Override
     protected MapCodec<? extends BlockWithEntity> getCodec() {
         return CODEC;
-    }
+    }*/
 
     @Override
-    protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return SHAPE;
     }
 
@@ -44,12 +43,12 @@ public class PedestalBlock extends BlockWithEntity implements BlockEntityProvide
     }
 
     @Override
-    protected BlockRenderType getRenderType(BlockState state) {
+    public BlockRenderType getRenderType(BlockState state) {
         return BlockRenderType.MODEL;
     }
 
     @Override
-    protected void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
+    public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if(state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
             if(blockEntity instanceof PedestalBlockEntity) {
@@ -61,8 +60,9 @@ public class PedestalBlock extends BlockWithEntity implements BlockEntityProvide
     }
 
     @Override
-    protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos,
-                                             PlayerEntity player, Hand hand, BlockHitResult hit) {
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        ItemStack stack = player.getStackInHand(hand);
+
         if(world.getBlockEntity(pos) instanceof PedestalBlockEntity pedestalBlockEntity) {
             if(pedestalBlockEntity.isEmpty() && !stack.isEmpty()) {
                 pedestalBlockEntity.setStack(0, stack);
@@ -84,6 +84,6 @@ public class PedestalBlock extends BlockWithEntity implements BlockEntityProvide
             }
         }
 
-        return ItemActionResult.SUCCESS;
+        return ActionResult.SUCCESS;
     }
 }

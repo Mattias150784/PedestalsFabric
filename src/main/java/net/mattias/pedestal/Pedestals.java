@@ -2,7 +2,10 @@ package net.mattias.pedestal;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.loader.api.FabricLoader;
 import net.mattias.pedestal.blocks.ModBlocks;
+import net.mattias.pedestal.blocks.custom.BasePedestalVariants;
+import net.mattias.pedestal.blocks.custom.BiomeOPlentyVariants;
 import net.mattias.pedestal.blocks.entity.ModBlockEntities;
 import net.mattias.pedestal.item.ModItemGroups;
 import net.mattias.pedestal.screen.ModScreenHandlers;
@@ -15,14 +18,13 @@ public class Pedestals implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroups.registerItemGroups();
+		BasePedestalVariants.define();
+		if(FabricLoader.getInstance().isModLoaded("biomesoplenty")) BiomeOPlentyVariants.define();
 
 		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
 
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerScreenHandlers();
-
-
-
 	}
 }

@@ -6,6 +6,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.math.BlockPos;
@@ -26,6 +27,10 @@ public class PedestalScreenHandler extends ScreenHandler {
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
+    }
+
+    public PedestalScreenHandler(int syncId, PlayerInventory playerInventory, PacketByteBuf packetByteBuf) {
+        this(syncId, playerInventory, packetByteBuf.readBlockPos());
     }
 
     @Override
