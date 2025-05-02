@@ -64,6 +64,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 case "purpur_pillar_pedestal":
                 case "purpur_block_pedestal":
                 case "end_stone_bricks_pedestal":
+                case "brimstone_pedestal":
+                case "chiseled_brimstone_bricks_pedestal":
+                case "brimstone_bricks_pedestal":
                 case "end_stone_pedestal":
                     getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(PedestalVariants.BLOCK_MAP.get(pedestalVariant));
                     break;
@@ -88,6 +91,33 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 case "jungle_planks_pedestal":
                 case "mangrove_planks_pedestal":
                 case "bamboo_planks_pedestal":
+                case "fir_log_pedestal":
+                case "pine_log_pedestal":
+                case "maple_oak_log_pedestal":
+                case "redwood_log_pedestal":
+                case "mahogany_log_pedestal":
+                case "jacaranda_log_pedestal":
+                case "palm_log_pedestal":
+                case "dead_log_pedestal":
+                case "magic_log_pedestal":
+                case "willow_log_pedestal":
+                case "umbran_log_pedestal":
+                case "hellbark_log_pedestal":
+                case "empyreal_log_pedestal":
+                case "fir_planks_pedestal":
+                case "pine_planks_pedestal":
+                case "maple_oak_planks_pedestal":
+                case "redwood_planks_pedestal":
+                case "mahogany_planks_pedestal":
+                case "jacaranda_planks_pedestal":
+                case "palm_planks_pedestal":
+                case "dead_planks_pedestal":
+                case "magic_planks_pedestal":
+                case "willow_planks_pedestal":
+                case "umbran_planks_pedestal":
+                case "hellbark_planks_pedestal":
+                case "empyreal_planks_pedestal":
+               
                     getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(PedestalVariants.BLOCK_MAP.get(pedestalVariant));
                     break;
             }
