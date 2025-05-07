@@ -32,9 +32,12 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 
-	modImplementation "curse.maven:terrablender-fabric-565956:5658261"
-	modImplementation "curse.maven:glitchcore-955399:5645391"
-	modImplementation "curse.maven:biomes-o-plenty-220318:5645383"
+	modRuntimeOnly "curse.maven:terrablender-fabric-565956:5658261"
+	modRuntimeOnly "curse.maven:glitchcore-955399:5645391"
+	modRuntimeOnly "curse.maven:biomes-o-plenty-220318:5645383"
+	runtimeOnly "com.electronwill.night-config:toml:3.6.5"
+	runtimeOnly "com.electronwill.night-config:core:3.6.5"
+	runtimeOnly "net.jodah:typetools:0.6.3"
 }
 
 processResources {
