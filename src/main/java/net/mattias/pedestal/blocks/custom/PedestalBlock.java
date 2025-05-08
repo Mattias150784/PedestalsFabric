@@ -26,10 +26,10 @@ public class PedestalBlock extends BlockWithEntity implements BlockEntityProvide
         super(settings);
     }
 
-    /*@Override
-    protected MapCodec<? extends BlockWithEntity> getCodec() {
-        return CODEC;
-    }*/
+    //@Override
+    //protected MapCodec<? extends BlockWithEntity> getCodec() {
+    //    return CODEC;
+    //}
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {

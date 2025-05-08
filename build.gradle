@@ -11,11 +11,16 @@ base {
 }
 
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+	exclusiveContent {
+		forRepository {
+			maven {
+				url "https://cursemaven.com"
+			}
+		}
+		filter {
+			includeGroup "curse.maven"
+		}
+	}
 }
 
 fabricApi {
@@ -23,6 +28,7 @@ fabricApi {
 		client = true
 	}
 }
+
 
 dependencies {
 	// To change the versions see the gradle.properties file
@@ -32,9 +38,19 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
-}
 
+	// Biomes O' Plenty
+	modLocalRuntime "curse.maven:biomes-o-plenty-220318:6364066"
+	modLocalRuntime "curse.maven:terrablender-fabric-565956:6290449"
+	modLocalRuntime "curse.maven:glitchcore-955399:5787838"
+	localRuntime "com.electronwill.night-config:toml:3.6.5"
+	localRuntime "com.electronwill.night-config:core:3.6.5"
+	localRuntime "net.jodah:typetools:0.6.3"
+
+	// Cobblemon
+	//modLocalRuntime "curse.maven:cobblemon-687131:5375408"
+	//modLocalRuntime "net.fabricmc:fabric-language-kotlin:1.13.2+kotlin.2.1.20"
+}
 processResources {
 	inputs.property "version", project.version
 
