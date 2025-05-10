@@ -46,6 +46,10 @@ public class PedestalModelGenerator implements DataProvider {
 						textures.addProperty("0", baseBlockId.getNamespace() + ":block/" + pedestalVariant.textureName());
 						textures.addProperty("particle", baseBlockId.getNamespace() + ":block/" + pedestalVariant.textureName());
 
+						if(pedestalVariant.textureName().contains("glass")) {
+							model.addProperty("render_type", "translucent");
+						}
+
 						Path modelFile = output.resolvePath(DataOutput.OutputType.RESOURCE_PACK).resolve(Pedestals.MOD_ID + "/models/block/" + pedestalVariant.registryName() + ".json");
 
 						Files.createDirectories(modelFile.getParent());

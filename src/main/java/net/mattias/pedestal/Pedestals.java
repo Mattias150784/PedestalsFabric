@@ -7,6 +7,7 @@ import net.mattias.pedestal.blocks.ModBlocks;
 import net.mattias.pedestal.blocks.custom.BasePedestalVariants;
 import net.mattias.pedestal.blocks.custom.BiomeOPlentyVariants;
 import net.mattias.pedestal.blocks.custom.CobblemonVariants;
+import net.mattias.pedestal.blocks.custom.CreateVariants;
 import net.mattias.pedestal.blocks.entity.ModBlockEntities;
 import net.mattias.pedestal.item.ModItemGroups;
 import net.mattias.pedestal.screen.ModScreenHandlers;
@@ -22,6 +23,7 @@ public class Pedestals implements ModInitializer {
 		BasePedestalVariants.define();
 		if(FabricLoader.getInstance().isModLoaded("biomesoplenty")) BiomeOPlentyVariants.define();
 		if(FabricLoader.getInstance().isModLoaded("cobblemon")) CobblemonVariants.define();
+		if(FabricLoader.getInstance().isModLoaded("create")) CreateVariants.define();
 
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();

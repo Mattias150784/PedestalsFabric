@@ -47,6 +47,13 @@ public class BasePedestalVariants {
 		new PedestalVariant("diorite_pedestal", "diorite", () -> Blocks.DIORITE),
 		new PedestalVariant("andesite_pedestal", "andesite", () -> Blocks.ANDESITE),
 		new PedestalVariant("polished_deepslate_pedestal", "polished_deepslate", () -> Blocks.POLISHED_DEEPSLATE),
+		new PedestalVariant("chiseled_deepslate_pedestal", "chiseled_deepslate", () -> Blocks.CHISELED_DEEPSLATE),
+		new PedestalVariant("deepslate_pedestal", "deepslate", () -> Blocks.DEEPSLATE),
+		new PedestalVariant("cobbled_deepslate_pedestal", "cobbled_deepslate", () -> Blocks.COBBLED_DEEPSLATE),
+		new PedestalVariant("deepslate_bricks_pedestal", "deepslate_bricks", () -> Blocks.DEEPSLATE_BRICKS),
+		new PedestalVariant("cracked_deepslate_bricks_pedestal", "cracked_deepslate_bricks", () -> Blocks.CRACKED_DEEPSLATE_BRICKS),
+		new PedestalVariant("deepslate_tiles_pedestal", "deepslate_tiles", () -> Blocks.DEEPSLATE_TILES),
+		new PedestalVariant("cracked_deepslate_tiles_pedestal", "cracked_deepslate_tiles", () -> Blocks.CRACKED_DEEPSLATE_TILES),
 		new PedestalVariant("bricks_pedestal", "bricks", () -> Blocks.BRICKS),
 		new PedestalVariant("mossy_cobblestone_pedestal", "mossy_cobblestone", () -> Blocks.MOSSY_COBBLESTONE),
 		new PedestalVariant("mossy_stone_bricks_pedestal", "mossy_stone_bricks", () -> Blocks.MOSSY_STONE_BRICKS),
@@ -128,7 +135,7 @@ public class BasePedestalVariants {
 		new PedestalVariant("cyan_terracotta_glazed_pedestal", "cyan_glazed_terracotta", () -> Blocks.CYAN_GLAZED_TERRACOTTA),
 		new PedestalVariant("lime_terracotta_glazed_pedestal", "lime_glazed_terracotta", () -> Blocks.LIME_GLAZED_TERRACOTTA),
 
-		// misc.
+		// nether
 		new PedestalVariant("blackstone_pedestal", "blackstone", () -> Blocks.BLACKSTONE),
 		new PedestalVariant("crying_obsidian_pedestal", "crying_obsidian", () -> Blocks.CRYING_OBSIDIAN),
 		new PedestalVariant("obsidian_pedestal", "obsidian", () -> Blocks.OBSIDIAN),
@@ -139,6 +146,14 @@ public class BasePedestalVariants {
 		new PedestalVariant("soul_soil_pedestal", "soul_soil", () -> Blocks.SOUL_SOIL),
 		new PedestalVariant("end_stone_bricks_pedestal", "end_stone_bricks", () -> Blocks.END_STONE_BRICKS),
 		new PedestalVariant("end_stone_pedestal", "end_stone", () -> Blocks.END_STONE),
-		new PedestalVariant("purpur_block_pedestal", "purpur_block", () -> Blocks.PURPUR_BLOCK)
+		new PedestalVariant("purpur_block_pedestal", "purpur_block", () -> Blocks.PURPUR_BLOCK),
+
+		//misc
+		new PedestalVariant("glass_pedestal", "glass", () -> Blocks.GLASS),
+		new PedestalVariant("packed_mud_pedestal", "packed_mud", () -> Blocks.PACKED_MUD),
+		new PedestalVariant("mud_bricks_pedestal", "mud_bricks", () -> Blocks.MUD_BRICKS),
+		new PedestalVariant("prismarine_pedestal", "prismarine", () -> Blocks.PRISMARINE),
+		new PedestalVariant("prismarine_bricks_pedestal", "prismarine_bricks", () -> Blocks.PRISMARINE_BRICKS),
+		new PedestalVariant("dark_prismarine_pedestal", "dark_prismarine", () -> Blocks.DARK_PRISMARINE)
 	);
 }
